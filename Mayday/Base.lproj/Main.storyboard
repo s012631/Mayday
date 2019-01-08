@@ -64,6 +64,13 @@
                                     <segue destination="fOq-lp-azy" kind="show" id="kRr-Ci-VSq"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drew" translatesAutoresizingMaskIntoConstraints="NO" id="Ttu-YT-z76">
+                                <rect key="frame" x="12.5" y="40" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="pab-jK-PWZ"/>
+                                    <constraint firstAttribute="height" constant="350" id="wge-bx-3en"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.12367110022015886" green="0.22132597754399103" blue="0.49647049492385786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -71,12 +78,14 @@
                             <constraint firstItem="0dg-KU-2yj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4rq-ce-BA3"/>
                             <constraint firstItem="uOL-Rv-2qk" firstAttribute="top" secondItem="UNj-bY-23C" secondAttribute="bottom" constant="8" id="8Uh-bc-mNw"/>
                             <constraint firstItem="5Hz-AD-eus" firstAttribute="top" secondItem="uOL-Rv-2qk" secondAttribute="bottom" constant="8" id="HNI-QR-TZB"/>
+                            <constraint firstItem="Ttu-YT-z76" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="HxT-TZ-bv2"/>
                             <constraint firstItem="0dg-KU-2yj" firstAttribute="top" secondItem="vWw-Cx-fhO" secondAttribute="bottom" constant="8" id="O12-7H-yjV"/>
                             <constraint firstItem="5Hz-AD-eus" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="OBm-QH-OSF"/>
                             <constraint firstItem="UNj-bY-23C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="QVb-FF-Ex5"/>
                             <constraint firstItem="ckK-bp-azR" firstAttribute="leading" secondItem="5Hz-AD-eus" secondAttribute="trailing" constant="14" id="Rtu-90-lnr"/>
                             <constraint firstItem="ckK-bp-azR" firstAttribute="top" secondItem="uOL-Rv-2qk" secondAttribute="bottom" constant="14" id="XDR-aK-4NQ"/>
                             <constraint firstItem="vWw-Cx-fhO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="fgB-0d-sj0"/>
+                            <constraint firstItem="Ttu-YT-z76" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nQJ-Kj-xYK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uOL-Rv-2qk" secondAttribute="bottom" constant="125" id="whi-vM-Eum"/>
                             <constraint firstItem="uOL-Rv-2qk" firstAttribute="top" secondItem="0dg-KU-2yj" secondAttribute="bottom" constant="62" id="zGM-yS-Gc8"/>
                         </constraints>
@@ -180,4 +189,7 @@
             <point key="canvasLocation" x="133.59999999999999" y="1022.3388305847077"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="drew" width="350" height="350"/>
+    </resources>
 </document>
