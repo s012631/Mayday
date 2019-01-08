@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E6C69E021E389A600D48B25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E6C69DF21E389A600D48B25 /* GoogleService-Info.plist */; };
 		7E84957F21DCF98B000B9395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84957E21DCF98B000B9395 /* AppDelegate.swift */; };
 		7E84958121DCF98B000B9395 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84958021DCF98B000B9395 /* ViewController.swift */; };
 		7E84958421DCF98B000B9395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E84958221DCF98B000B9395 /* Main.storyboard */; };
@@ -14,7 +15,6 @@
 		7E84958921DCF997000B9395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E84958721DCF997000B9395 /* LaunchScreen.storyboard */; };
 		7E84959421DCF998000B9395 /* MaydayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84959321DCF998000B9395 /* MaydayTests.swift */; };
 		7E84959F21DCF998000B9395 /* MaydayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84959E21DCF998000B9395 /* MaydayUITests.swift */; };
-		7E8495AD21DE5DDE000B9395 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E8495AC21DE5DDE000B9395 /* GoogleService-Info (1).plist */; };
 		DA3A5B7AA304C5DA745770AB /* Pods_Mayday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422A22E9EC17F69210C0311B /* Pods_Mayday.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +39,7 @@
 		10340DCE9CFCA93CA93F9468 /* Pods-Mayday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mayday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mayday/Pods-Mayday.debug.xcconfig"; sourceTree = "<group>"; };
 		3E6A835013C24276BE2E42F6 /* Pods-Mayday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mayday.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mayday/Pods-Mayday.release.xcconfig"; sourceTree = "<group>"; };
 		422A22E9EC17F69210C0311B /* Pods_Mayday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mayday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E6C69DF21E389A600D48B25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7E84957B21DCF98B000B9395 /* Mayday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mayday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E84957E21DCF98B000B9395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E84958021DCF98B000B9395 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		7E84959A21DCF998000B9395 /* MaydayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaydayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E84959E21DCF998000B9395 /* MaydayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaydayUITests.swift; sourceTree = "<group>"; };
 		7E8495A021DCF998000B9395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E8495AC21DE5DDE000B9395 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,7 @@
 				7E84958521DCF997000B9395 /* Assets.xcassets */,
 				7E84958721DCF997000B9395 /* LaunchScreen.storyboard */,
 				7E84958A21DCF997000B9395 /* Info.plist */,
-				7E8495AC21DE5DDE000B9395 /* GoogleService-Info (1).plist */,
+				7E6C69DF21E389A600D48B25 /* GoogleService-Info.plist */,
 			);
 			path = Mayday;
 			sourceTree = "<group>";
@@ -259,9 +259,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E84958921DCF997000B9395 /* LaunchScreen.storyboard in Resources */,
+				7E6C69E021E389A600D48B25 /* GoogleService-Info.plist in Resources */,
 				7E84958621DCF997000B9395 /* Assets.xcassets in Resources */,
 				7E84958421DCF98B000B9395 /* Main.storyboard in Resources */,
-				7E8495AD21DE5DDE000B9395 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
