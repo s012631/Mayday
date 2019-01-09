@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mayday" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Mayday" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,15 +56,21 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonTouchedUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Zi-qH-k0t"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckK-bp-azR">
                                 <rect key="frame" x="125" y="556" width="204" height="30"/>
-                                <state key="normal" title="Sign up with an emali address"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <state key="normal" title="Sign up with an emali address">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="fOq-lp-azy" kind="show" id="kRr-Ci-VSq"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drew" translatesAutoresizingMaskIntoConstraints="NO" id="Ttu-YT-z76">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download-2" translatesAutoresizingMaskIntoConstraints="NO" id="Ttu-YT-z76">
                                 <rect key="frame" x="12.5" y="40" width="350" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="pab-jK-PWZ"/>
@@ -91,20 +97,24 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailAddressTextField" destination="0dg-KU-2yj" id="NEA-RX-FCm"/>
+                        <outlet property="passwordTextField" destination="uOL-Rv-2qk" id="FjS-KK-lJo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="303.59820089955025"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="gTz-H7-IbS">
             <objects>
-                <viewController id="fOq-lp-azy" sceneMemberID="viewController">
+                <viewController id="fOq-lp-azy" customClass="SignUpViewController" customModule="Mayday" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ekF-O6-jCX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eYu-TQ-1PJ">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eYu-TQ-1PJ" customClass="self">
                                 <rect key="frame" x="37.5" y="345" width="300" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ODv-2A-KOj"/>
@@ -158,6 +168,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpButtonTouchedUp:" destination="fOq-lp-azy" eventType="touchUpInside" id="c6L-JU-PpK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.13333333333333333" green="0.18431372549019609" blue="0.51764705882352946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -183,6 +196,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nj9-iU-Alg"/>
                     </view>
+                    <connections>
+                        <outlet property="emailAddressTextField" destination="eYu-TQ-1PJ" id="lHu-Ii-dFn"/>
+                        <outlet property="passwordConfirmationTextField" destination="oFA-Iu-S04" id="uql-Qr-vSC"/>
+                        <outlet property="passwordTextField" destination="2xm-m7-5WE" id="fFh-cS-sfM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IKp-ot-Q94" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,6 +208,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="drew" width="350" height="350"/>
+        <image name="download-2" width="209" height="242"/>
     </resources>
 </document>
