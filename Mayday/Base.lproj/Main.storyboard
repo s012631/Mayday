@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mayday" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Mayday" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,7 +57,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wv1-7N-CF6" kind="show" id="QwF-RD-CSQ"/>
+                                    <action selector="signInButtonTouchedUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwL-S6-FuC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckK-bp-azR">
@@ -67,7 +67,7 @@
                                     <segue destination="fOq-lp-azy" kind="show" id="kRr-Ci-VSq"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drew" translatesAutoresizingMaskIntoConstraints="NO" id="Ttu-YT-z76">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download-2" translatesAutoresizingMaskIntoConstraints="NO" id="Ttu-YT-z76">
                                 <rect key="frame" x="12.5" y="40" width="350" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="pab-jK-PWZ"/>
@@ -94,15 +94,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailAddressTextField" destination="0dg-KU-2yj" id="Ywo-qE-vYB"/>
+                        <outlet property="passwordTextField" destination="uOL-Rv-2qk" id="0w6-07-F5w"/>
+                        <outlet property="signInButton" destination="5Hz-AD-eus" id="h9O-Xk-gIj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="303.59820089955025"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="gTz-H7-IbS">
             <objects>
-                <viewController id="fOq-lp-azy" sceneMemberID="viewController">
+                <viewController id="fOq-lp-azy" customClass="SignUpViewController" customModule="Mayday" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ekF-O6-jCX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,6 +191,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nj9-iU-Alg"/>
                     </view>
+                    <connections>
+                        <outlet property="signUpButton" destination="TMO-V0-9XL" id="tLg-WB-L0y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IKp-ot-Q94" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,6 +232,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="drew" width="350" height="350"/>
+        <image name="download-2" width="209" height="242"/>
     </resources>
 </document>
