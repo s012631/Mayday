@@ -27,6 +27,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWw-Cx-fhO">
                                 <rect key="frame" x="37" y="380" width="74" height="32"/>
@@ -167,6 +170,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passwords do not match" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tnu-cy-DgC">
+                                <rect key="frame" x="38.5" y="615" width="298" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.13333333333333333" green="0.18431372549019609" blue="0.51764705882352946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -176,6 +185,8 @@
                             <constraint firstItem="NEE-z9-1c3" firstAttribute="top" secondItem="eYu-TQ-1PJ" secondAttribute="bottom" constant="20" id="4Ci-E2-02X"/>
                             <constraint firstItem="eYu-TQ-1PJ" firstAttribute="top" secondItem="a4E-w1-M5c" secondAttribute="bottom" constant="8" id="5fl-GJ-k3A"/>
                             <constraint firstItem="2xm-m7-5WE" firstAttribute="top" secondItem="eYu-TQ-1PJ" secondAttribute="bottom" constant="62" id="BRm-oY-C31"/>
+                            <constraint firstItem="Nj9-iU-Alg" firstAttribute="bottom" secondItem="Tnu-cy-DgC" secondAttribute="bottom" constant="20" id="JIV-hu-KlX"/>
+                            <constraint firstItem="Tnu-cy-DgC" firstAttribute="centerX" secondItem="ekF-O6-jCX" secondAttribute="centerX" id="Ozo-gh-9JM"/>
                             <constraint firstItem="2xm-m7-5WE" firstAttribute="top" secondItem="NEE-z9-1c3" secondAttribute="bottom" constant="8" id="VZS-hS-zUa"/>
                             <constraint firstItem="a4E-w1-M5c" firstAttribute="leading" secondItem="Nj9-iU-Alg" secondAttribute="leading" constant="37" id="aea-ld-KeW"/>
                             <constraint firstItem="oFA-Iu-S04" firstAttribute="centerX" secondItem="ekF-O6-jCX" secondAttribute="centerX" id="apt-dB-CE5"/>
@@ -192,6 +203,7 @@
                         <viewLayoutGuide key="safeArea" id="Nj9-iU-Alg"/>
                     </view>
                     <connections>
+                        <outlet property="invalidPasswordText" destination="Tnu-cy-DgC" id="DBM-DA-6fh"/>
                         <outlet property="signUpButton" destination="TMO-V0-9XL" id="tLg-WB-L0y"/>
                     </connections>
                 </viewController>

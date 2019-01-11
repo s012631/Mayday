@@ -16,8 +16,27 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailAddressTextField: UITextField!
     @IBOutlet weak var passwordConfirmationTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var invalidPasswordText: UILabel!
+    
     
     @IBAction func signUpButtonTouchedUp(_ sender: UIButton) {
+        guard let emailAddress = emailAddressTextField.text else {return}
+        guard let password = passwordTextField.text else {return}
+        guard let confirmPassword = passwordConfirmationTextField.text else {return}
+        
+        if(password == confirmPassword){
+            Auth.auth().createUser(withEmail: emailAddress, password: password) { (user, error) in
+                if user != nil, error == nil{
+                self.dismiss(animated: true, completion: nil)
+                }
+                else{
+                    print(error.debugDescription)
+                }
+            }
+        }
+        else{
+            invalidPasswordText.isHidden=false
+        }
     }
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
@@ -26,6 +45,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        invalidPasswordText.isHidden=true
         passwordTextField.delegate=self
         emailAddressTextField.delegate=self
         emailAddressTextField.becomeFirstResponder()
