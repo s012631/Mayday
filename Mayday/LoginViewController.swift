@@ -14,6 +14,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var emailAddressTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signInButton: UIButton!
+    @IBAction func moveToSignUp(_ sender: UIButton) {
+    }
     
     @IBAction func signInButtonTouchedUp(_ sender: UIButton) {
     }

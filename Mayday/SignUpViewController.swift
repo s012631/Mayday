@@ -46,9 +46,14 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         invalidPasswordText.isHidden=true
+        
+        if(passwordTextField != nil && emailAddressTextField != nil){
         passwordTextField.delegate=self
         emailAddressTextField.delegate=self
+        
+        
         emailAddressTextField.becomeFirstResponder()
+        }
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -63,7 +68,6 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             passwordConfirmationTextField.resignFirstResponder()
             signUpButton.isEnabled=true
         }
-        
         return true
     }
     
