@@ -191,10 +191,10 @@
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="1022.3388305847077"/>
         </scene>
-        <!--View Controller-->
+        <!--May Day Home-->
         <scene sceneID="pZy-uo-kh7">
             <objects>
-                <viewController id="wv1-7N-CF6" sceneMemberID="viewController">
+                <viewController id="wv1-7N-CF6" customClass="mayDayHome" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UyN-KN-pEv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
