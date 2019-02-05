@@ -18,24 +18,35 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
     }
     
     @IBAction func signInButtonTouchedUp(_ sender: UIButton) {
+        guard let emailAddress = emailAddressTextField.text else {return}
+        guard let password = passwordTextField.text else {return}
+        
+        Auth.auth().signIn(withEmail: emailAddress, password: password){(user, error) in
+            if error == nil && user != nil{
+                self.dismiss(animated: false, completion: nil)
+                print("signed in")
+            }
+            else{
+                print(error!.localizedDescription)
+            }
+        }
     }
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        return true
-    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         passwordTextField.delegate=self
         emailAddressTextField.delegate=self
         emailAddressTextField.becomeFirstResponder()
+        passwordTextField.isSecureTextEntry = true
+
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if emailAddressTextField.isFirstResponder{
             passwordTextField.becomeFirstResponder()
         }
         else{
-            self.view.endEditing(true)
             passwordTextField.resignFirstResponder()
-            signInButton.isEnabled=true
+            signInButton.isEnabled = true
         }
         return true
     }
