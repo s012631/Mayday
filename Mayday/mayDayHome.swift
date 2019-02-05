@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseStorage
+import FirebaseDatabase
 
 class mayDayHome: UIViewController, UITextFieldDelegate {
     
     
-  
+    @IBAction func changePhoto(_ sender: UIButton) {
+    }
+    
     override func viewDidLoad() {
       super.viewDidLoad()
     }
