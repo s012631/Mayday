@@ -243,7 +243,7 @@
         <!--SettingsViewController-->
         <scene sceneID="FS3-PP-U4F">
             <objects>
-                <viewController id="hrV-cn-47y" userLabel="SettingsViewController" sceneMemberID="viewController">
+                <viewController id="hrV-cn-47y" userLabel="SettingsViewController" customClass="SettingsViewController" customModule="Mayday" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="flS-8Z-GUm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -345,9 +345,6 @@
                                         <state key="normal" title="Change Photo">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <action selector="changePhoto:" destination="19m-2g-Ege" eventType="touchUpInside" id="DFG-5w-zbP"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atZ-0f-a8o">
                                         <rect key="frame" x="190" y="0.0" width="110" height="33"/>
@@ -372,6 +369,9 @@
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="logoutButtonTouchedUp:" destination="hrV-cn-47y" eventType="touchUpInside" id="glJ-TL-bq0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.13321609337914506" green="0.046021343434298999" blue="0.538586611675127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -418,9 +418,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PEJ-zl-U7m"/>
                     </view>
+                    <connections>
+                        <outlet property="alarmTextField" destination="OfA-jY-DVc" id="dbD-p5-xSJ"/>
+                        <outlet property="imageView" destination="f1k-dP-jiG" id="Kfw-6S-J2g"/>
+                        <outlet property="name" destination="142-UB-MGs" id="nKE-we-uLL"/>
+                        <outlet property="saveButton" destination="atZ-0f-a8o" id="Wwo-Ka-OEM"/>
+                        <outletCollection property="EmergencyContactsTextFields" destination="u5q-fR-T6E" collectionClass="NSMutableArray" id="LoQ-4A-rgo"/>
+                        <outletCollection property="EmergencyContactsTextFields" destination="J08-cK-xet" collectionClass="NSMutableArray" id="vUV-6u-Vm5"/>
+                        <outletCollection property="EmergencyContactsTextFields" destination="llj-1N-udP" collectionClass="NSMutableArray" id="FJk-QB-3Bm"/>
+                        <outletCollection property="PhoneNumbersTextFields" destination="p4Z-6W-IfV" collectionClass="NSMutableArray" id="Vna-AJ-Y4e"/>
+                        <outletCollection property="PhoneNumbersTextFields" destination="4vM-xu-vjX" collectionClass="NSMutableArray" id="G18-n3-E9q"/>
+                        <outletCollection property="PhoneNumbersTextFields" destination="m4g-A4-eF5" collectionClass="NSMutableArray" id="Zec-vL-QtP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhj-FY-yh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="19m-2g-Ege" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1996" y="714.53201970443354"/>
         </scene>
