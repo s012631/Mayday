@@ -17,7 +17,6 @@
 		7E84958921DCF997000B9395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E84958721DCF997000B9395 /* LaunchScreen.storyboard */; };
 		7E84959421DCF998000B9395 /* MaydayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84959321DCF998000B9395 /* MaydayTests.swift */; };
 		7E84959F21DCF998000B9395 /* MaydayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84959E21DCF998000B9395 /* MaydayUITests.swift */; };
-		ACA7848121E649E500A21E68 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA7848021E649E500A21E68 /* HomeScreenViewController.swift */; };
 		DA3A5B7AA304C5DA745770AB /* Pods_Mayday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422A22E9EC17F69210C0311B /* Pods_Mayday.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +57,6 @@
 		7E84959A21DCF998000B9395 /* MaydayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaydayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E84959E21DCF998000B9395 /* MaydayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaydayUITests.swift; sourceTree = "<group>"; };
 		7E8495A021DCF998000B9395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACA7848021E649E500A21E68 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +124,6 @@
 				7E84958521DCF997000B9395 /* Assets.xcassets */,
 				7E84958721DCF997000B9395 /* LaunchScreen.storyboard */,
 				7E84958A21DCF997000B9395 /* Info.plist */,
-				ACA7848021E649E500A21E68 /* HomeScreenViewController.swift */,
 				7E6C69DF21E389A600D48B25 /* GoogleService-Info.plist */,
 				7E6C69E321E4E41300D48B25 /* LoginViewController.swift */,
 				7E6C69E521E4E53A00D48B25 /* SignUpViewController.swift */,
@@ -352,7 +349,6 @@
 				7E84958121DCF98B000B9395 /* ViewController.swift in Sources */,
 				7E6C69E621E4E53A00D48B25 /* SignUpViewController.swift in Sources */,
 				7E84957F21DCF98B000B9395 /* AppDelegate.swift in Sources */,
-				ACA7848121E649E500A21E68 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
