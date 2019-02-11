@@ -1,682 +1,686 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 50;
-	objects = {
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 50;
+    objects = {
 
 /* Begin PBXBuildFile section */
-		7E6C69E021E389A600D48B25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E6C69DF21E389A600D48B25 /* GoogleService-Info.plist */; };
-		7E6C69E421E4E41300D48B25 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C69E321E4E41300D48B25 /* LoginViewController.swift */; };
-		7E6C69E621E4E53A00D48B25 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C69E521E4E53A00D48B25 /* SignUpViewController.swift */; };
-		7E84957F21DCF98B000B9395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84957E21DCF98B000B9395 /* AppDelegate.swift */; };
-		7E84958121DCF98B000B9395 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84958021DCF98B000B9395 /* ViewController.swift */; };
-		7E84958421DCF98B000B9395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E84958221DCF98B000B9395 /* Main.storyboard */; };
-		7E84958621DCF997000B9395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E84958521DCF997000B9395 /* Assets.xcassets */; };
-		7E84958921DCF997000B9395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E84958721DCF997000B9395 /* LaunchScreen.storyboard */; };
-		7E84959421DCF998000B9395 /* MaydayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84959321DCF998000B9395 /* MaydayTests.swift */; };
-		7E84959F21DCF998000B9395 /* MaydayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84959E21DCF998000B9395 /* MaydayUITests.swift */; };
-		DA3A5B7AA304C5DA745770AB /* Pods_Mayday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422A22E9EC17F69210C0311B /* Pods_Mayday.framework */; };
+        7E6C69E021E389A600D48B25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E6C69DF21E389A600D48B25 /* GoogleService-Info.plist */; };
+        7E6C69E421E4E41300D48B25 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C69E321E4E41300D48B25 /* LoginViewController.swift */; };
+        7E6C69E621E4E53A00D48B25 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C69E521E4E53A00D48B25 /* SignUpViewController.swift */; };
+        7E84957F21DCF98B000B9395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84957E21DCF98B000B9395 /* AppDelegate.swift */; };
+        7E84958121DCF98B000B9395 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84958021DCF98B000B9395 /* ViewController.swift */; };
+        7E84958421DCF98B000B9395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E84958221DCF98B000B9395 /* Main.storyboard */; };
+        7E84958621DCF997000B9395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E84958521DCF997000B9395 /* Assets.xcassets */; };
+        7E84958921DCF997000B9395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E84958721DCF997000B9395 /* LaunchScreen.storyboard */; };
+        7E84959421DCF998000B9395 /* MaydayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84959321DCF998000B9395 /* MaydayTests.swift */; };
+        7E84959F21DCF998000B9395 /* MaydayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84959E21DCF998000B9395 /* MaydayUITests.swift */; };
+		ACA7848121E649E500A21E68 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA7848021E649E500A21E68 /* SettingsViewController.swift */; };
+        DA3A5B7AA304C5DA745770AB /* Pods_Mayday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422A22E9EC17F69210C0311B /* Pods_Mayday.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7E84959021DCF998000B9395 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7E84957321DCF98A000B9395 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7E84957A21DCF98B000B9395;
-			remoteInfo = Mayday;
-		};
-		7E84959B21DCF998000B9395 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7E84957321DCF98A000B9395 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7E84957A21DCF98B000B9395;
-			remoteInfo = Mayday;
-		};
+        7E84959021DCF998000B9395 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = 7E84957321DCF98A000B9395 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = 7E84957A21DCF98B000B9395;
+            remoteInfo = Mayday;
+        };
+        7E84959B21DCF998000B9395 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = 7E84957321DCF98A000B9395 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = 7E84957A21DCF98B000B9395;
+            remoteInfo = Mayday;
+        };
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10340DCE9CFCA93CA93F9468 /* Pods-Mayday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mayday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mayday/Pods-Mayday.debug.xcconfig"; sourceTree = "<group>"; };
-		3E6A835013C24276BE2E42F6 /* Pods-Mayday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mayday.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mayday/Pods-Mayday.release.xcconfig"; sourceTree = "<group>"; };
-		422A22E9EC17F69210C0311B /* Pods_Mayday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mayday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E6C69DF21E389A600D48B25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		7E6C69E321E4E41300D48B25 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		7E6C69E521E4E53A00D48B25 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		7E84957B21DCF98B000B9395 /* Mayday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mayday.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E84957E21DCF98B000B9395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E84958021DCF98B000B9395 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7E84958321DCF98B000B9395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7E84958521DCF997000B9395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7E84958821DCF997000B9395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7E84958A21DCF997000B9395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E84958F21DCF998000B9395 /* MaydayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaydayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E84959321DCF998000B9395 /* MaydayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaydayTests.swift; sourceTree = "<group>"; };
-		7E84959521DCF998000B9395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E84959A21DCF998000B9395 /* MaydayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaydayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E84959E21DCF998000B9395 /* MaydayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaydayUITests.swift; sourceTree = "<group>"; };
-		7E8495A021DCF998000B9395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        10340DCE9CFCA93CA93F9468 /* Pods-Mayday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mayday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mayday/Pods-Mayday.debug.xcconfig"; sourceTree = "<group>"; };
+        3E6A835013C24276BE2E42F6 /* Pods-Mayday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mayday.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mayday/Pods-Mayday.release.xcconfig"; sourceTree = "<group>"; };
+        422A22E9EC17F69210C0311B /* Pods_Mayday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mayday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+        7E6C69DF21E389A600D48B25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+        7E6C69E321E4E41300D48B25 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+        7E6C69E521E4E53A00D48B25 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+        7E84957B21DCF98B000B9395 /* Mayday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mayday.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        7E84957E21DCF98B000B9395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        7E84958021DCF98B000B9395 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+        7E84958321DCF98B000B9395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+        7E84958521DCF997000B9395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        7E84958821DCF997000B9395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+        7E84958A21DCF997000B9395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        7E84958F21DCF998000B9395 /* MaydayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaydayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+        7E84959321DCF998000B9395 /* MaydayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaydayTests.swift; sourceTree = "<group>"; };
+        7E84959521DCF998000B9395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        7E84959A21DCF998000B9395 /* MaydayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaydayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+        7E84959E21DCF998000B9395 /* MaydayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaydayUITests.swift; sourceTree = "<group>"; };
+        7E8495A021DCF998000B9395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        ACA7848021E649E500A21E68 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7E84957821DCF98B000B9395 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA3A5B7AA304C5DA745770AB /* Pods_Mayday.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E84958C21DCF998000B9395 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E84959721DCF998000B9395 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        7E84957821DCF98B000B9395 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                DA3A5B7AA304C5DA745770AB /* Pods_Mayday.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        7E84958C21DCF998000B9395 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        7E84959721DCF998000B9395 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		29344F10025311200FF55E23 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				422A22E9EC17F69210C0311B /* Pods_Mayday.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7E84957221DCF98A000B9395 = {
-			isa = PBXGroup;
-			children = (
-				7E84957D21DCF98B000B9395 /* Mayday */,
-				7E84959221DCF998000B9395 /* MaydayTests */,
-				7E84959D21DCF998000B9395 /* MaydayUITests */,
-				7E84957C21DCF98B000B9395 /* Products */,
-				828DF38495EDA0F038099AAE /* Pods */,
-				29344F10025311200FF55E23 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		7E84957C21DCF98B000B9395 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7E84957B21DCF98B000B9395 /* Mayday.app */,
-				7E84958F21DCF998000B9395 /* MaydayTests.xctest */,
-				7E84959A21DCF998000B9395 /* MaydayUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7E84957D21DCF98B000B9395 /* Mayday */ = {
-			isa = PBXGroup;
-			children = (
-				7E84957E21DCF98B000B9395 /* AppDelegate.swift */,
-				7E84958021DCF98B000B9395 /* ViewController.swift */,
-				7E84958221DCF98B000B9395 /* Main.storyboard */,
-				7E84958521DCF997000B9395 /* Assets.xcassets */,
-				7E84958721DCF997000B9395 /* LaunchScreen.storyboard */,
-				7E84958A21DCF997000B9395 /* Info.plist */,
-				7E6C69DF21E389A600D48B25 /* GoogleService-Info.plist */,
-				7E6C69E321E4E41300D48B25 /* LoginViewController.swift */,
-				7E6C69E521E4E53A00D48B25 /* SignUpViewController.swift */,
-			);
-			path = Mayday;
-			sourceTree = "<group>";
-		};
-		7E84959221DCF998000B9395 /* MaydayTests */ = {
-			isa = PBXGroup;
-			children = (
-				7E84959321DCF998000B9395 /* MaydayTests.swift */,
-				7E84959521DCF998000B9395 /* Info.plist */,
-			);
-			path = MaydayTests;
-			sourceTree = "<group>";
-		};
-		7E84959D21DCF998000B9395 /* MaydayUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7E84959E21DCF998000B9395 /* MaydayUITests.swift */,
-				7E8495A021DCF998000B9395 /* Info.plist */,
-			);
-			path = MaydayUITests;
-			sourceTree = "<group>";
-		};
-		828DF38495EDA0F038099AAE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				10340DCE9CFCA93CA93F9468 /* Pods-Mayday.debug.xcconfig */,
-				3E6A835013C24276BE2E42F6 /* Pods-Mayday.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
+        29344F10025311200FF55E23 /* Frameworks */ = {
+            isa = PBXGroup;
+            children = (
+                422A22E9EC17F69210C0311B /* Pods_Mayday.framework */,
+            );
+            name = Frameworks;
+            sourceTree = "<group>";
+        };
+        7E84957221DCF98A000B9395 = {
+            isa = PBXGroup;
+            children = (
+                7E84957D21DCF98B000B9395 /* Mayday */,
+                7E84959221DCF998000B9395 /* MaydayTests */,
+                7E84959D21DCF998000B9395 /* MaydayUITests */,
+                7E84957C21DCF98B000B9395 /* Products */,
+                828DF38495EDA0F038099AAE /* Pods */,
+                29344F10025311200FF55E23 /* Frameworks */,
+            );
+            sourceTree = "<group>";
+        };
+        7E84957C21DCF98B000B9395 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                7E84957B21DCF98B000B9395 /* Mayday.app */,
+                7E84958F21DCF998000B9395 /* MaydayTests.xctest */,
+                7E84959A21DCF998000B9395 /* MaydayUITests.xctest */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        7E84957D21DCF98B000B9395 /* Mayday */ = {
+            isa = PBXGroup;
+            children = (
+                7E84957E21DCF98B000B9395 /* AppDelegate.swift */,
+                7E84958021DCF98B000B9395 /* ViewController.swift */,
+                7E84958221DCF98B000B9395 /* Main.storyboard */,
+                7E84958521DCF997000B9395 /* Assets.xcassets */,
+                7E84958721DCF997000B9395 /* LaunchScreen.storyboard */,
+                7E84958A21DCF997000B9395 /* Info.plist */,
+                ACA7848021E649E500A21E68 /* SettingsViewController.swift */,
+                7E6C69DF21E389A600D48B25 /* GoogleService-Info.plist */,
+                7E6C69E321E4E41300D48B25 /* LoginViewController.swift */,
+                7E6C69E521E4E53A00D48B25 /* SignUpViewController.swift */,
+            );
+            path = Mayday;
+            sourceTree = "<group>";
+        };
+        7E84959221DCF998000B9395 /* MaydayTests */ = {
+            isa = PBXGroup;
+            children = (
+                7E84959321DCF998000B9395 /* MaydayTests.swift */,
+                7E84959521DCF998000B9395 /* Info.plist */,
+            );
+            path = MaydayTests;
+            sourceTree = "<group>";
+        };
+        7E84959D21DCF998000B9395 /* MaydayUITests */ = {
+            isa = PBXGroup;
+            children = (
+                7E84959E21DCF998000B9395 /* MaydayUITests.swift */,
+                7E8495A021DCF998000B9395 /* Info.plist */,
+            );
+            path = MaydayUITests;
+            sourceTree = "<group>";
+        };
+        828DF38495EDA0F038099AAE /* Pods */ = {
+            isa = PBXGroup;
+            children = (
+                10340DCE9CFCA93CA93F9468 /* Pods-Mayday.debug.xcconfig */,
+                3E6A835013C24276BE2E42F6 /* Pods-Mayday.release.xcconfig */,
+            );
+            name = Pods;
+            sourceTree = "<group>";
+        };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7E84957A21DCF98B000B9395 /* Mayday */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7E8495A321DCF998000B9395 /* Build configuration list for PBXNativeTarget "Mayday" */;
-			buildPhases = (
-				4BCC8418D91E5C56FFAAD123 /* [CP] Check Pods Manifest.lock */,
-				7E84957721DCF98B000B9395 /* Sources */,
-				7E84957821DCF98B000B9395 /* Frameworks */,
-				7E84957921DCF98B000B9395 /* Resources */,
-				DFD677300F383E680402193A /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Mayday;
-			productName = Mayday;
-			productReference = 7E84957B21DCF98B000B9395 /* Mayday.app */;
-			productType = "com.apple.product-type.application";
-		};
-		7E84958E21DCF998000B9395 /* MaydayTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7E8495A621DCF998000B9395 /* Build configuration list for PBXNativeTarget "MaydayTests" */;
-			buildPhases = (
-				7E84958B21DCF998000B9395 /* Sources */,
-				7E84958C21DCF998000B9395 /* Frameworks */,
-				7E84958D21DCF998000B9395 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7E84959121DCF998000B9395 /* PBXTargetDependency */,
-			);
-			name = MaydayTests;
-			productName = MaydayTests;
-			productReference = 7E84958F21DCF998000B9395 /* MaydayTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7E84959921DCF998000B9395 /* MaydayUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7E8495A921DCF998000B9395 /* Build configuration list for PBXNativeTarget "MaydayUITests" */;
-			buildPhases = (
-				7E84959621DCF998000B9395 /* Sources */,
-				7E84959721DCF998000B9395 /* Frameworks */,
-				7E84959821DCF998000B9395 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7E84959C21DCF998000B9395 /* PBXTargetDependency */,
-			);
-			name = MaydayUITests;
-			productName = MaydayUITests;
-			productReference = 7E84959A21DCF998000B9395 /* MaydayUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
+        7E84957A21DCF98B000B9395 /* Mayday */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 7E8495A321DCF998000B9395 /* Build configuration list for PBXNativeTarget "Mayday" */;
+            buildPhases = (
+                4BCC8418D91E5C56FFAAD123 /* [CP] Check Pods Manifest.lock */,
+                7E84957721DCF98B000B9395 /* Sources */,
+                7E84957821DCF98B000B9395 /* Frameworks */,
+                7E84957921DCF98B000B9395 /* Resources */,
+                DFD677300F383E680402193A /* [CP] Embed Pods Frameworks */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = Mayday;
+            productName = Mayday;
+            productReference = 7E84957B21DCF98B000B9395 /* Mayday.app */;
+            productType = "com.apple.product-type.application";
+        };
+        7E84958E21DCF998000B9395 /* MaydayTests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 7E8495A621DCF998000B9395 /* Build configuration list for PBXNativeTarget "MaydayTests" */;
+            buildPhases = (
+                7E84958B21DCF998000B9395 /* Sources */,
+                7E84958C21DCF998000B9395 /* Frameworks */,
+                7E84958D21DCF998000B9395 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                7E84959121DCF998000B9395 /* PBXTargetDependency */,
+            );
+            name = MaydayTests;
+            productName = MaydayTests;
+            productReference = 7E84958F21DCF998000B9395 /* MaydayTests.xctest */;
+            productType = "com.apple.product-type.bundle.unit-test";
+        };
+        7E84959921DCF998000B9395 /* MaydayUITests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 7E8495A921DCF998000B9395 /* Build configuration list for PBXNativeTarget "MaydayUITests" */;
+            buildPhases = (
+                7E84959621DCF998000B9395 /* Sources */,
+                7E84959721DCF998000B9395 /* Frameworks */,
+                7E84959821DCF998000B9395 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                7E84959C21DCF998000B9395 /* PBXTargetDependency */,
+            );
+            name = MaydayUITests;
+            productName = MaydayUITests;
+            productReference = 7E84959A21DCF998000B9395 /* MaydayUITests.xctest */;
+            productType = "com.apple.product-type.bundle.ui-testing";
+        };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7E84957321DCF98A000B9395 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Gabriel Hummel (student LM)";
-				TargetAttributes = {
-					7E84957A21DCF98B000B9395 = {
-						CreatedOnToolsVersion = 10.1;
-					};
-					7E84958E21DCF998000B9395 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 7E84957A21DCF98B000B9395;
-					};
-					7E84959921DCF998000B9395 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 7E84957A21DCF98B000B9395;
-					};
-				};
-			};
-			buildConfigurationList = 7E84957621DCF98A000B9395 /* Build configuration list for PBXProject "Mayday" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 7E84957221DCF98A000B9395;
-			productRefGroup = 7E84957C21DCF98B000B9395 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				7E84957A21DCF98B000B9395 /* Mayday */,
-				7E84958E21DCF998000B9395 /* MaydayTests */,
-				7E84959921DCF998000B9395 /* MaydayUITests */,
-			);
-		};
+        7E84957321DCF98A000B9395 /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 1010;
+                LastUpgradeCheck = 1010;
+                ORGANIZATIONNAME = "Gabriel Hummel (student LM)";
+                TargetAttributes = {
+                    7E84957A21DCF98B000B9395 = {
+                        CreatedOnToolsVersion = 10.1;
+                    };
+                    7E84958E21DCF998000B9395 = {
+                        CreatedOnToolsVersion = 10.1;
+                        TestTargetID = 7E84957A21DCF98B000B9395;
+                    };
+                    7E84959921DCF998000B9395 = {
+                        CreatedOnToolsVersion = 10.1;
+                        TestTargetID = 7E84957A21DCF98B000B9395;
+                    };
+                };
+            };
+            buildConfigurationList = 7E84957621DCF98A000B9395 /* Build configuration list for PBXProject "Mayday" */;
+            compatibilityVersion = "Xcode 9.3";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = 7E84957221DCF98A000B9395;
+            productRefGroup = 7E84957C21DCF98B000B9395 /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                7E84957A21DCF98B000B9395 /* Mayday */,
+                7E84958E21DCF998000B9395 /* MaydayTests */,
+                7E84959921DCF998000B9395 /* MaydayUITests */,
+            );
+        };
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7E84957921DCF98B000B9395 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E84958921DCF997000B9395 /* LaunchScreen.storyboard in Resources */,
-				7E6C69E021E389A600D48B25 /* GoogleService-Info.plist in Resources */,
-				7E84958621DCF997000B9395 /* Assets.xcassets in Resources */,
-				7E84958421DCF98B000B9395 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E84958D21DCF998000B9395 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E84959821DCF998000B9395 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        7E84957921DCF98B000B9395 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                7E84958921DCF997000B9395 /* LaunchScreen.storyboard in Resources */,
+                7E6C69E021E389A600D48B25 /* GoogleService-Info.plist in Resources */,
+                7E84958621DCF997000B9395 /* Assets.xcassets in Resources */,
+                7E84958421DCF98B000B9395 /* Main.storyboard in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        7E84958D21DCF998000B9395 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        7E84959821DCF998000B9395 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4BCC8418D91E5C56FFAAD123 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Mayday-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DFD677300F383E680402193A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Mayday/Pods-Mayday-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mayday/Pods-Mayday-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
+        4BCC8418D91E5C56FFAAD123 /* [CP] Check Pods Manifest.lock */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-Mayday-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
+        DFD677300F383E680402193A /* [CP] Embed Pods Frameworks */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${SRCROOT}/Pods/Target Support Files/Pods-Mayday/Pods-Mayday-frameworks.sh",
+                "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+                "${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+                "${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+                "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+            );
+            name = "[CP] Embed Pods Frameworks";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mayday/Pods-Mayday-frameworks.sh\"\n";
+            showEnvVarsInLog = 0;
+        };
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7E84957721DCF98B000B9395 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E6C69E421E4E41300D48B25 /* LoginViewController.swift in Sources */,
-				7E84958121DCF98B000B9395 /* ViewController.swift in Sources */,
-				7E6C69E621E4E53A00D48B25 /* SignUpViewController.swift in Sources */,
-				7E84957F21DCF98B000B9395 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E84958B21DCF998000B9395 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E84959421DCF998000B9395 /* MaydayTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E84959621DCF998000B9395 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E84959F21DCF998000B9395 /* MaydayUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        7E84957721DCF98B000B9395 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                7E6C69E421E4E41300D48B25 /* LoginViewController.swift in Sources */,
+                7E84958121DCF98B000B9395 /* ViewController.swift in Sources */,
+                7E6C69E621E4E53A00D48B25 /* SignUpViewController.swift in Sources */,
+                7E84957F21DCF98B000B9395 /* AppDelegate.swift in Sources */,
+                ACA7848121E649E500A21E68 /* SettingsViewController.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        7E84958B21DCF998000B9395 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                7E84959421DCF998000B9395 /* MaydayTests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        7E84959621DCF998000B9395 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                7E84959F21DCF998000B9395 /* MaydayUITests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7E84959121DCF998000B9395 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7E84957A21DCF98B000B9395 /* Mayday */;
-			targetProxy = 7E84959021DCF998000B9395 /* PBXContainerItemProxy */;
-		};
-		7E84959C21DCF998000B9395 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7E84957A21DCF98B000B9395 /* Mayday */;
-			targetProxy = 7E84959B21DCF998000B9395 /* PBXContainerItemProxy */;
-		};
+        7E84959121DCF998000B9395 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = 7E84957A21DCF98B000B9395 /* Mayday */;
+            targetProxy = 7E84959021DCF998000B9395 /* PBXContainerItemProxy */;
+        };
+        7E84959C21DCF998000B9395 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = 7E84957A21DCF98B000B9395 /* Mayday */;
+            targetProxy = 7E84959B21DCF998000B9395 /* PBXContainerItemProxy */;
+        };
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7E84958221DCF98B000B9395 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E84958321DCF98B000B9395 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7E84958721DCF997000B9395 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E84958821DCF997000B9395 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
+        7E84958221DCF98B000B9395 /* Main.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                7E84958321DCF98B000B9395 /* Base */,
+            );
+            name = Main.storyboard;
+            sourceTree = "<group>";
+        };
+        7E84958721DCF997000B9395 /* LaunchScreen.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                7E84958821DCF997000B9395 /* Base */,
+            );
+            name = LaunchScreen.storyboard;
+            sourceTree = "<group>";
+        };
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7E8495A121DCF998000B9395 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		7E8495A221DCF998000B9395 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		7E8495A421DCF998000B9395 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10340DCE9CFCA93CA93F9468 /* Pods-Mayday.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7FG25FCNNQ;
-				INFOPLIST_FILE = Mayday/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Constraints.Mayday;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7E8495A521DCF998000B9395 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E6A835013C24276BE2E42F6 /* Pods-Mayday.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7FG25FCNNQ;
-				INFOPLIST_FILE = Mayday/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Constraints.Mayday;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		7E8495A721DCF998000B9395 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MaydayTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Constraints.MaydayTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mayday.app/Mayday";
-			};
-			name = Debug;
-		};
-		7E8495A821DCF998000B9395 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MaydayTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Constraints.MaydayTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mayday.app/Mayday";
-			};
-			name = Release;
-		};
-		7E8495AA21DCF998000B9395 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MaydayUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Constraints.MaydayUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Mayday;
-			};
-			name = Debug;
-		};
-		7E8495AB21DCF998000B9395 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MaydayUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Constraints.MaydayUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Mayday;
-			};
-			name = Release;
-		};
+        7E8495A121DCF998000B9395 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                ENABLE_TESTABILITY = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+                MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+                MTL_FAST_MATH = YES;
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = iphoneos;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            };
+            name = Debug;
+        };
+        7E8495A221DCF998000B9395 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+                MTL_ENABLE_DEBUG_INFO = NO;
+                MTL_FAST_MATH = YES;
+                SDKROOT = iphoneos;
+                SWIFT_COMPILATION_MODE = wholemodule;
+                SWIFT_OPTIMIZATION_LEVEL = "-O";
+                VALIDATE_PRODUCT = YES;
+            };
+            name = Release;
+        };
+        7E8495A421DCF998000B9395 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 10340DCE9CFCA93CA93F9468 /* Pods-Mayday.debug.xcconfig */;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 7FG25FCNNQ;
+                INFOPLIST_FILE = Mayday/Info.plist;
+                IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = Constraints.Mayday;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Debug;
+        };
+        7E8495A521DCF998000B9395 /* Release */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 3E6A835013C24276BE2E42F6 /* Pods-Mayday.release.xcconfig */;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 7FG25FCNNQ;
+                INFOPLIST_FILE = Mayday/Info.plist;
+                IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = Constraints.Mayday;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Release;
+        };
+        7E8495A721DCF998000B9395 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = MaydayTests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = Constraints.MaydayTests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mayday.app/Mayday";
+            };
+            name = Debug;
+        };
+        7E8495A821DCF998000B9395 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = MaydayTests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = Constraints.MaydayTests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mayday.app/Mayday";
+            };
+            name = Release;
+        };
+        7E8495AA21DCF998000B9395 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = MaydayUITests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = Constraints.MaydayUITests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_TARGET_NAME = Mayday;
+            };
+            name = Debug;
+        };
+        7E8495AB21DCF998000B9395 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = MaydayUITests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = Constraints.MaydayUITests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_TARGET_NAME = Mayday;
+            };
+            name = Release;
+        };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7E84957621DCF98A000B9395 /* Build configuration list for PBXProject "Mayday" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7E8495A121DCF998000B9395 /* Debug */,
-				7E8495A221DCF998000B9395 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7E8495A321DCF998000B9395 /* Build configuration list for PBXNativeTarget "Mayday" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7E8495A421DCF998000B9395 /* Debug */,
-				7E8495A521DCF998000B9395 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7E8495A621DCF998000B9395 /* Build configuration list for PBXNativeTarget "MaydayTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7E8495A721DCF998000B9395 /* Debug */,
-				7E8495A821DCF998000B9395 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7E8495A921DCF998000B9395 /* Build configuration list for PBXNativeTarget "MaydayUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7E8495AA21DCF998000B9395 /* Debug */,
-				7E8495AB21DCF998000B9395 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+        7E84957621DCF98A000B9395 /* Build configuration list for PBXProject "Mayday" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                7E8495A121DCF998000B9395 /* Debug */,
+                7E8495A221DCF998000B9395 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        7E8495A321DCF998000B9395 /* Build configuration list for PBXNativeTarget "Mayday" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                7E8495A421DCF998000B9395 /* Debug */,
+                7E8495A521DCF998000B9395 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        7E8495A621DCF998000B9395 /* Build configuration list for PBXNativeTarget "MaydayTests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                7E8495A721DCF998000B9395 /* Debug */,
+                7E8495A821DCF998000B9395 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        7E8495A921DCF998000B9395 /* Build configuration list for PBXNativeTarget "MaydayUITests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                7E8495AA21DCF998000B9395 /* Debug */,
+                7E8495AB21DCF998000B9395 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
 /* End XCConfigurationList section */
-	};
-	rootObject = 7E84957321DCF98A000B9395 /* Project object */;
+    };
+    rootObject = 7E84957321DCF98A000B9395 /* Project object */;
 }
