@@ -60,12 +60,11 @@
                                 </state>
                                 <connections>
                                     <action selector="signInButtonTouchedUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwL-S6-FuC"/>
-                                    <segue destination="wv1-7N-CF6" kind="show" id="2dr-mx-9yI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckK-bp-azR">
                                 <rect key="frame" x="125" y="280" width="204" height="30"/>
-                                <state key="normal" title="Sign up with an emali address"/>
+                                <state key="normal" title="Sign up with an email address"/>
                                 <connections>
                                     <action selector="moveToSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A1P-F3-8Pb"/>
                                     <segue destination="fOq-lp-azy" kind="show" id="kRr-Ci-VSq"/>
@@ -162,7 +161,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wv1-7N-CF6" kind="show" id="t9p-xm-EK1"/>
+                                    <action selector="signUpButtonTouched:" destination="fOq-lp-azy" eventType="touchUpInside" id="cte-mJ-k94"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passwords do not match" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tnu-cy-DgC">
@@ -198,8 +197,11 @@
                         <viewLayoutGuide key="safeArea" id="Nj9-iU-Alg"/>
                     </view>
                     <connections>
-                        <outlet property="invalidPasswordText" destination="Tnu-cy-DgC" id="DBM-DA-6fh"/>
-                        <outlet property="signUpButton" destination="TMO-V0-9XL" id="tLg-WB-L0y"/>
+                        <outlet property="emailAddressTextField" destination="eYu-TQ-1PJ" id="0Sb-MZ-VFL"/>
+                        <outlet property="invalidPasswordsText" destination="Tnu-cy-DgC" id="IGy-Qa-JAX"/>
+                        <outlet property="passwordConfirmationTextField" destination="oFA-Iu-S04" id="eGh-bY-1FB"/>
+                        <outlet property="passwordTextField" destination="2xm-m7-5WE" id="5wO-pb-0lL"/>
+                        <outlet property="signUpButton" destination="TMO-V0-9XL" id="HXf-EC-tPn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IKp-ot-Q94" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -425,7 +427,4 @@
             <point key="canvasLocation" x="1996" y="714.53201970443354"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="2dr-mx-9yI"/>
-    </inferredMetricsTieBreakers>
 </document>

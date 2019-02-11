@@ -12,31 +12,44 @@ import FirebaseAuth
 class SignUpViewController: UIViewController, UITextFieldDelegate {
 
 
-    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailAddressTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordConfirmationTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
-    @IBOutlet weak var invalidPasswordText: UILabel!
+    @IBOutlet weak var invalidPasswordsText: UILabel!
     
-    
-    @IBAction func signUpButtonTouchedUp(_ sender: UIButton) {
+    @IBAction func signUpButtonTouched(_ sender: UIButton) {
         guard let emailAddress = emailAddressTextField.text else {return}
         guard let password = passwordTextField.text else {return}
         guard let confirmPassword = passwordConfirmationTextField.text else {return}
         
-        if(password == confirmPassword){
+        print("account touched")
+        print(emailAddressTextField)
+        print(passwordConfirmationTextField.text)
+        print(passwordTextField.text)
+         print(passwordTextField.text == passwordConfirmationTextField.text)
+//        if(password == confirmPassword){
             Auth.auth().createUser(withEmail: emailAddress, password: password) { (user, error) in
                 if user != nil, error == nil{
+                print("account created")
                 self.dismiss(animated: true, completion: nil)
                 }
-                else{
+                else if user == nil{
+                    print("no user")
                     print(error.debugDescription)
                 }
+                else if error != nil{
+                    print("error")
+                    print(error.debugDescription)
+                    if user == nil{
+                        print("and no user")
+                    }
+                }
             }
-        }
-        else{
-            invalidPasswordText.isHidden=false
-        }
+//        }
+//        else{
+//            invalidPasswordsText.isHidden=false
+//        }
     }
     
     override func viewDidLoad() {
@@ -44,12 +57,11 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         emailAddressTextField.delegate=self
         passwordTextField.delegate=self
         passwordConfirmationTextField.delegate=self
-        
+        invalidPasswordsText.isHidden=true
         emailAddressTextField.becomeFirstResponder()
         passwordTextField.isSecureTextEntry = true
         passwordConfirmationTextField.isSecureTextEntry = true
-
-        
+        signUpButton.isEnabled=false
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
