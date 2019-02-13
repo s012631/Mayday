@@ -60,6 +60,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signInButtonTouchedUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwL-S6-FuC"/>
+                                    <segue destination="wv1-7N-CF6" kind="show" id="nN2-hw-0y5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckK-bp-azR">

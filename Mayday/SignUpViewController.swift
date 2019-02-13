@@ -32,7 +32,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         if(password == passwordConfirmation){
              print("match")
         }
-//        if(password == confirmPassword){
+        if(password == passwordConfirmation){
             Auth.auth().createUser(withEmail: emailAddress, password: password) { (user, error) in
                 if user != nil, error == nil{
                 print("account created")
@@ -50,10 +50,10 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                     }
                 }
             }
-//        }
-//        else{
-//            invalidPasswordsText.isHidden=false
-//        }
+        }
+        else{
+            invalidPasswordsText.isHidden=false
+       }
     }
     
     override func viewDidLoad() {
