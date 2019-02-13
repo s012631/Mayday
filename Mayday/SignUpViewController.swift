@@ -19,15 +19,19 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var invalidPasswordsText: UILabel!
     
     @IBAction func signUpButtonTouched(_ sender: UIButton) {
-        guard let emailAddress = emailAddressTextField.text else {return}
-        guard let password = passwordTextField.text else {return}
-        guard let confirmPassword = passwordConfirmationTextField.text else {return}
+        
         
         print("account touched")
-        print(emailAddressTextField)
-        print(passwordConfirmationTextField.text)
-        print(passwordTextField.text)
-         print(passwordTextField.text == passwordConfirmationTextField.text)
+        guard let emailAddress = emailAddressTextField.text else {return}
+        guard let passwordConfirmation = passwordConfirmationTextField.text else {return}
+        guard let password = passwordTextField.text else {return}
+       
+        print(emailAddress)
+        print(password)
+        print(passwordConfirmation)
+        if(password == passwordConfirmation){
+             print("match")
+        }
 //        if(password == confirmPassword){
             Auth.auth().createUser(withEmail: emailAddress, password: password) { (user, error) in
                 if user != nil, error == nil{
