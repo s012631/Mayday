@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("view loaded")
 
     }
     override func viewDidAppear(_ animated: Bool) {
