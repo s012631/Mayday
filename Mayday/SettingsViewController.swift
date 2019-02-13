@@ -28,9 +28,36 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
     @IBOutlet weak var saveButton: UIButton!
     
     
+ // link to how to use firebase   https://firebase.google.com/docs/database/ios/read-and-write
     @IBAction func saveButtonTouchedUp(_ sender: UIButton) {
+        // need to use database to store everything not an image
+        guard let uid = Auth.auth().currentUser?.uid else {return}
+        let database = Database.database().reference().child("user/\(uid)")
+    
+     
+//        // get current user's userid
+//        guard let uid = Auth.auth().currentUser?.uid else {return}
+//        // get a reference to the storage object
+//        let storage = Storage.storage().reference().child("user/\(uid)")
+//        // image's must be saved as data object's so convert and compress the image
+//
+//        guard let image = imageView?.image, let imageData = UIImageJPEGRepresentation(image, 0.75) else {return}
+//
+//        // store the image
+//        storage.putData(imageData, metadata: StorageMetadata()) { (metaData, error) in
+//            if error == nil && metaData != nil {
+//                storage.downloadURL { url, error in
+//                    guard let downloadURL = url else { return }
+//                    completion(downloadURL)
+//                }
+//            } else {
+//                completion(nil)
+//            }
+//        }
         
     }
+    
+    
     
 
     @IBAction func logoutButtonTouchedUp(_ sender: UIButton){
@@ -153,26 +180,27 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
 //        }
 //    }
 //
-//    func uploadProfilePicture(_ image: UIImage, _ completion: @escaping((_ url:URL?) -> ())){
-//        // get current user's userid
-//        guard let uid = Auth.auth().currentUser?.uid else {return}
-//        // get a reference to the storage object
-//        let storage = Storage.storage().reference().child("user/\(uid)")
-//        // image's must be saved as data object's so convert and compress the image
-//
-//        guard let image = imageView?.image, let imageData = UIImageJPEGRepresentation(image, 0.75) else {return}
-//        // store the image
-//        storage.putData(imageData, metadata: StorageMetadata()) { (metaData, error) in
-//            if error == nil && metaData != nil {
-//                storage.downloadURL { url, error in
-//                    guard let downloadURL = url else { return }
-//                    completion(downloadURL)
-//                }
-//            } else {
-//                completion(nil)
-//            }
-//        }
-//    }
+    func uploadProfilePicture(_ image: UIImage, _ completion: @escaping((_ url:URL?) -> ())){
+        // get current user's userid
+        guard let uid = Auth.auth().currentUser?.uid else {return}
+        // get a reference to the storage object
+        let storage = Storage.storage().reference().child("user/\(uid)")
+        // image's must be saved as data object's so convert and compress the image
+
+        guard let image = imageView?.image, let imageData = UIImageJPEGRepresentation(image, 0.75) else {return}
+
+        // store the image
+        storage.putData(imageData, metadata: StorageMetadata()) { (metaData, error) in
+            if error == nil && metaData != nil {
+                storage.downloadURL { url, error in
+                    guard let downloadURL = url else { return }
+                    completion(downloadURL)
+                }
+            } else {
+                completion(nil)
+            }
+        }
+    }
 
     
     
