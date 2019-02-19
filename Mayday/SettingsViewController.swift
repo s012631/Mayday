@@ -32,7 +32,10 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
     @IBAction func saveButtonTouchedUp(_ sender: UIButton) {
         // need to use database to store everything not an image
         guard let uid = Auth.auth().currentUser?.uid else {return}
-        let database = Database.database().reference().child("user/\(uid)")
+ //       let databaseRef = Database.database().reference().child("user/\(uid)")
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        
     
      
 //        // get current user's userid
