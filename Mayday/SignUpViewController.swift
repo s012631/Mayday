@@ -10,8 +10,8 @@ import UIKit
 import FirebaseAuth
 
 class SignUpViewController: UIViewController, UITextFieldDelegate {
-
-
+    
+    
     @IBOutlet weak var emailAddressTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordConfirmationTextField: UITextField!
@@ -25,18 +25,18 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         guard let emailAddress = emailAddressTextField.text else {return}
         guard let passwordConfirmation = passwordConfirmationTextField.text else {return}
         guard let password = passwordTextField.text else {return}
-       
+        
         print(emailAddress)
         print(password)
         print(passwordConfirmation)
         if(password == passwordConfirmation){
-             print("match")
+            print("match")
         }
         if(password == passwordConfirmation){
             Auth.auth().createUser(withEmail: emailAddress, password: password) { (user, error) in
                 if user != nil, error == nil{
-                print("account created")
-                self.dismiss(animated: true, completion: nil)
+                    print("account created")
+                    self.dismiss(animated: true, completion: nil)
                 }
                 else if user == nil{
                     print("no user")
@@ -53,7 +53,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         }
         else{
             invalidPasswordsText.isHidden=false
-       }
+        }
     }
     
     override func viewDidLoad() {

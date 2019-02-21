@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>430830342757-61cq9ca5gk2h60rljhm5fl41tt57qvcs.apps.googleusercontent.com</string>
+	<string>190140718539-kadivrvcui9pshn4i4b2vgplmech1att.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.430830342757-61cq9ca5gk2h60rljhm5fl41tt57qvcs</string>
+	<string>com.googleusercontent.apps.190140718539-kadivrvcui9pshn4i4b2vgplmech1att</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBf7Yubon4HO9LcM-dqCGL58xUbMVWzBgY</string>
+	<string>AIzaSyC415BkjpPEN2iCcffIaOaCuX8AT_aWGdE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>430830342757</string>
+	<string>190140718539</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>Constraints.FirebaseAuthetnication</string>
+	<string>Constraints.Mayday</string>
 	<key>PROJECT_ID</key>
-	<string>fir-authetnication</string>
+	<string>mayday-36476</string>
 	<key>STORAGE_BUCKET</key>
-	<string>fir-authetnication.appspot.com</string>
+	<string>mayday-36476.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:430830342757:ios:0f4e108753a4e1d6</string>
+	<string>1:190140718539:ios:e2af7a5fb61e2d88</string>
 	<key>DATABASE_URL</key>
-	<string>https://fir-authetnication.firebaseio.com</string>
+	<string>https://mayday-36476.firebaseio.com</string>
 </dict>
 </plist>

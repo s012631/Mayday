@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E6C69E021E389A600D48B25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E6C69DF21E389A600D48B25 /* GoogleService-Info.plist */; };
 		7E6C69E421E4E41300D48B25 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C69E321E4E41300D48B25 /* LoginViewController.swift */; };
 		7E6C69E621E4E53A00D48B25 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C69E521E4E53A00D48B25 /* SignUpViewController.swift */; };
 		7E84957F21DCF98B000B9395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84957E21DCF98B000B9395 /* AppDelegate.swift */; };
@@ -17,6 +16,10 @@
 		7E84958921DCF997000B9395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E84958721DCF997000B9395 /* LaunchScreen.storyboard */; };
 		7E84959421DCF998000B9395 /* MaydayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84959321DCF998000B9395 /* MaydayTests.swift */; };
 		7E84959F21DCF998000B9395 /* MaydayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84959E21DCF998000B9395 /* MaydayUITests.swift */; };
+		7E963E05221B8003007BA382 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E963E04221B8003007BA382 /* GoogleService-Info.plist */; };
+		7E963E06221B8003007BA382 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E963E04221B8003007BA382 /* GoogleService-Info.plist */; };
+		7E963E07221B8003007BA382 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E963E04221B8003007BA382 /* GoogleService-Info.plist */; };
+		7E963E09221B800D007BA382 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E963E08221B800D007BA382 /* GoogleService-Info.plist */; };
 		AC6929A2221464C900B1A2BE /* MayDayHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6929A1221464C900B1A2BE /* MayDayHome.swift */; };
 		ACA7848121E649E500A21E68 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA7848021E649E500A21E68 /* SettingsViewController.swift */; };
 		DA3A5B7AA304C5DA745770AB /* Pods_Mayday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422A22E9EC17F69210C0311B /* Pods_Mayday.framework */; };
@@ -43,7 +46,6 @@
 		10340DCE9CFCA93CA93F9468 /* Pods-Mayday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mayday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mayday/Pods-Mayday.debug.xcconfig"; sourceTree = "<group>"; };
 		3E6A835013C24276BE2E42F6 /* Pods-Mayday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mayday.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mayday/Pods-Mayday.release.xcconfig"; sourceTree = "<group>"; };
 		422A22E9EC17F69210C0311B /* Pods_Mayday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mayday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E6C69DF21E389A600D48B25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7E6C69E321E4E41300D48B25 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7E6C69E521E4E53A00D48B25 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7E84957B21DCF98B000B9395 /* Mayday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mayday.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +61,8 @@
 		7E84959A21DCF998000B9395 /* MaydayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaydayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E84959E21DCF998000B9395 /* MaydayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaydayUITests.swift; sourceTree = "<group>"; };
 		7E8495A021DCF998000B9395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E963E04221B8003007BA382 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Mayday/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7E963E08221B800D007BA382 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC6929A1221464C900B1A2BE /* MayDayHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayDayHome.swift; sourceTree = "<group>"; };
 		ACA7848021E649E500A21E68 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,9 +132,9 @@
 				7E84958221DCF98B000B9395 /* Main.storyboard */,
 				7E84958521DCF997000B9395 /* Assets.xcassets */,
 				7E84958721DCF997000B9395 /* LaunchScreen.storyboard */,
+				7E963E08221B800D007BA382 /* GoogleService-Info.plist */,
 				7E84958A21DCF997000B9395 /* Info.plist */,
 				ACA7848021E649E500A21E68 /* SettingsViewController.swift */,
-				7E6C69DF21E389A600D48B25 /* GoogleService-Info.plist */,
 				7E6C69E321E4E41300D48B25 /* LoginViewController.swift */,
 				7E6C69E521E4E53A00D48B25 /* SignUpViewController.swift */,
 			);
@@ -140,6 +144,7 @@
 		7E84959221DCF998000B9395 /* MaydayTests */ = {
 			isa = PBXGroup;
 			children = (
+				7E963E04221B8003007BA382 /* GoogleService-Info.plist */,
 				7E84959321DCF998000B9395 /* MaydayTests.swift */,
 				7E84959521DCF998000B9395 /* Info.plist */,
 			);
@@ -271,7 +276,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E84958921DCF997000B9395 /* LaunchScreen.storyboard in Resources */,
-				7E6C69E021E389A600D48B25 /* GoogleService-Info.plist in Resources */,
+				7E963E05221B8003007BA382 /* GoogleService-Info.plist in Resources */,
+				7E963E09221B800D007BA382 /* GoogleService-Info.plist in Resources */,
 				7E84958621DCF997000B9395 /* Assets.xcassets in Resources */,
 				7E84958421DCF98B000B9395 /* Main.storyboard in Resources */,
 			);
@@ -281,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E963E06221B8003007BA382 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E963E07221B8003007BA382 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

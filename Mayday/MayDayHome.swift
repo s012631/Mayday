@@ -14,15 +14,14 @@ class MayDayHome: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        animateBackgroundColor()
     }
     
-    func animateBackgroundColor(){
-        UIView.animate(withDuration: 10, delay: 0, options:[.autoreverse, .curveLinear, .repeat], animations: {
-            let x = -(self.gradSafe.frame.width - self.view.frame.width)
-            self.gradSafe.transform = CGAffineTransform(translationX: x, y: 0)
-        })
-    }
+//    func animateBackgroundColor(){
+//        UIView.animate(withDuration: 10, delay: 0, options:[.autoreverse, .curveLinear, .repeat], animations: {
+//            let x = -(self.gradSafe.frame.width - self.view.frame.width)
+//            self.gradSafe.transform = CGAffineTransform(translationX: x, y: 0)
+//        })
+//    }
    
 }
 
