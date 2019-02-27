@@ -60,7 +60,6 @@
                                 </state>
                                 <connections>
                                     <action selector="signInButtonTouchedUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwL-S6-FuC"/>
-                                    <segue destination="wv1-7N-CF6" kind="show" id="nN2-hw-0y5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckK-bp-azR">
@@ -93,6 +92,7 @@
                         <outlet property="emailAddressTextField" destination="0dg-KU-2yj" id="Ywo-qE-vYB"/>
                         <outlet property="passwordTextField" destination="uOL-Rv-2qk" id="0w6-07-F5w"/>
                         <outlet property="signInButton" destination="5Hz-AD-eus" id="h9O-Xk-gIj"/>
+                        <segue destination="wv1-7N-CF6" kind="show" identifier="loginToSegue" id="CAs-YM-Guc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -203,11 +203,12 @@
                         <outlet property="passwordConfirmationTextField" destination="oFA-Iu-S04" id="eGh-bY-1FB"/>
                         <outlet property="passwordTextField" destination="2xm-m7-5WE" id="5wO-pb-0lL"/>
                         <outlet property="signUpButton" destination="TMO-V0-9XL" id="HXf-EC-tPn"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="signUpToLogin" id="i61-tY-Vrq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IKp-ot-Q94" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.59999999999999" y="1022.3388305847077"/>
+            <point key="canvasLocation" x="-20" y="1165"/>
         </scene>
         <!--May Day Home-->
         <scene sceneID="pZy-uo-kh7">
