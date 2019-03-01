@@ -70,26 +70,31 @@
                                     <segue destination="fOq-lp-azy" kind="show" id="kRr-Ci-VSq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email or password incorrect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maC-ky-B2m">
-                                <rect key="frame" x="26" y="672" width="322" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOh-eA-Vmx">
+                                <rect key="frame" x="160.66666666666666" y="382" width="54" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Test">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wv1-7N-CF6" kind="show" id="v7L-mf-AAw"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.1333333333" green="0.1843137255" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.12367110022015886" green="0.22132597754399103" blue="0.49647049492385786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="uOL-Rv-2qk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3ME-75-2hh"/>
                             <constraint firstItem="0dg-KU-2yj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4rq-ce-BA3"/>
                             <constraint firstItem="uOL-Rv-2qk" firstAttribute="top" secondItem="UNj-bY-23C" secondAttribute="bottom" constant="8" id="8Uh-bc-mNw"/>
                             <constraint firstItem="5Hz-AD-eus" firstAttribute="top" secondItem="uOL-Rv-2qk" secondAttribute="bottom" constant="8" id="HNI-QR-TZB"/>
+                            <constraint firstItem="dOh-eA-Vmx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HoO-wE-pfw"/>
                             <constraint firstItem="0dg-KU-2yj" firstAttribute="top" secondItem="vWw-Cx-fhO" secondAttribute="bottom" constant="8" id="O12-7H-yjV"/>
                             <constraint firstItem="5Hz-AD-eus" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="OBm-QH-OSF"/>
                             <constraint firstItem="UNj-bY-23C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="QVb-FF-Ex5"/>
                             <constraint firstItem="0dg-KU-2yj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="R8D-Cg-dgP"/>
                             <constraint firstItem="ckK-bp-azR" firstAttribute="leading" secondItem="5Hz-AD-eus" secondAttribute="trailing" constant="14" id="Rtu-90-lnr"/>
                             <constraint firstItem="ckK-bp-azR" firstAttribute="top" secondItem="uOL-Rv-2qk" secondAttribute="bottom" constant="14" id="XDR-aK-4NQ"/>
+                            <constraint firstItem="dOh-eA-Vmx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aWe-jd-dKV"/>
                             <constraint firstItem="vWw-Cx-fhO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="fgB-0d-sj0"/>
                             <constraint firstItem="uOL-Rv-2qk" firstAttribute="top" secondItem="0dg-KU-2yj" secondAttribute="bottom" constant="62" id="zGM-yS-Gc8"/>
                         </constraints>
@@ -97,7 +102,6 @@
                     </view>
                     <connections>
                         <outlet property="emailAddressTextField" destination="0dg-KU-2yj" id="Ywo-qE-vYB"/>
-                        <outlet property="incorrectInput" destination="maC-ky-B2m" id="wJK-nX-b1V"/>
                         <outlet property="passwordTextField" destination="uOL-Rv-2qk" id="0w6-07-F5w"/>
                         <outlet property="signInButton" destination="5Hz-AD-eus" id="h9O-Xk-gIj"/>
                         <segue destination="wv1-7N-CF6" kind="show" identifier="loginToSegue" id="CAs-YM-Guc"/>
@@ -105,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.59999999999999" y="337.6847290640394"/>
+            <point key="canvasLocation" x="133.59999999999999" y="303.59820089955025"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="gTz-H7-IbS">
@@ -216,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IKp-ot-Q94" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="134" y="1010"/>
+            <point key="canvasLocation" x="-20" y="1165"/>
         </scene>
         <!--May Day Home-->
         <scene sceneID="pZy-uo-kh7">
@@ -226,9 +230,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradSafe" translatesAutoresizingMaskIntoConstraints="NO" id="pJ0-7S-Axd">
-                                <rect key="frame" x="0.0" y="0.0" width="1375" height="812"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUF-NC-C3i">
                                 <rect key="frame" x="0.0" y="64" width="375" height="714"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
@@ -242,23 +243,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.11339948695243249" green="0.083079898662252891" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pJ0-7S-Axd" firstAttribute="leading" secondItem="Ltt-A6-KB9" secondAttribute="leading" id="4NS-qY-kFD"/>
-                            <constraint firstAttribute="bottom" secondItem="pJ0-7S-Axd" secondAttribute="bottom" id="5sB-YW-COT"/>
-                            <constraint firstItem="pJ0-7S-Axd" firstAttribute="top" secondItem="UyN-KN-pEv" secondAttribute="top" id="Cxe-xW-bUX"/>
-                            <constraint firstAttribute="trailing" secondItem="pJ0-7S-Axd" secondAttribute="trailing" constant="-1000" id="JCN-ez-cII"/>
                             <constraint firstItem="Ltt-A6-KB9" firstAttribute="trailing" secondItem="lUF-NC-C3i" secondAttribute="trailing" id="NDC-Uq-WGr"/>
-                            <constraint firstItem="pJ0-7S-Axd" firstAttribute="leading" secondItem="Ltt-A6-KB9" secondAttribute="leading" id="URo-T4-ajP"/>
                             <constraint firstItem="lUF-NC-C3i" firstAttribute="centerX" secondItem="UyN-KN-pEv" secondAttribute="centerX" id="Xvn-DH-c88"/>
-                            <constraint firstItem="pJ0-7S-Axd" firstAttribute="top" secondItem="UyN-KN-pEv" secondAttribute="top" id="Zxt-Zy-T6q"/>
                             <constraint firstItem="Ltt-A6-KB9" firstAttribute="bottom" secondItem="lUF-NC-C3i" secondAttribute="bottom" id="exa-QQ-57K"/>
                             <constraint firstItem="lUF-NC-C3i" firstAttribute="leading" secondItem="Ltt-A6-KB9" secondAttribute="leading" id="qRw-eC-Tdz"/>
                             <constraint firstItem="lUF-NC-C3i" firstAttribute="top" secondItem="Ltt-A6-KB9" secondAttribute="top" constant="20" id="rX0-Mp-MJF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ltt-A6-KB9"/>
                     </view>
-                    <connections>
-                        <outlet property="gradSafe" destination="pJ0-7S-Axd" id="3j6-w8-H0H"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zua-Fm-zVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -404,7 +396,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.1333333333" green="0.1843137255" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.13321609337914506" green="0.046021343434298999" blue="0.538586611675127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OfA-jY-DVc" firstAttribute="top" secondItem="5qD-iT-Yuh" secondAttribute="bottom" constant="8" id="0Ds-Hg-zfV"/>
                             <constraint firstItem="PEJ-zl-U7m" firstAttribute="trailing" secondItem="llj-1N-udP" secondAttribute="trailing" constant="176" id="3Yl-fk-O89"/>
@@ -466,7 +458,7 @@
             <point key="canvasLocation" x="1996" y="714.53201970443354"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="gradSafe" width="4968" height="2208"/>
-    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="v7L-mf-AAw"/>
+    </inferredMetricsTieBreakers>
 </document>
