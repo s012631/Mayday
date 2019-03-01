@@ -35,15 +35,12 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         if(password == passwordConfirmation){
             Auth.auth().createUser(withEmail: emailAddress, password: password) { (user, error) in
                 if user != nil, error == nil{
-                    print("account created")
                     self.performSegue(withIdentifier: "signUpToLogin", sender: self)
                 }
                 else if user == nil{
-                    print("no user")
                     print(error.debugDescription)
                 }
                 else if error != nil{
-                    print("error")
                     print(error.debugDescription)
                     if user == nil{
                         print("and no user")
