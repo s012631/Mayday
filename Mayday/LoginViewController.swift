@@ -17,19 +17,20 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
     @IBAction func moveToSignUp(_ sender: UIButton) {
     }
     
+    
     @IBAction func signInButtonTouchedUp(_ sender: UIButton) {
-//        guard let emailAddress = emailAddressTextField.text else {return}
-//        guard let password = passwordTextField.text else {return}
-//        Auth.auth().signIn(withEmail: emailAddress, password: password) { (user, error) in
-//            if error == nil && user != nil{
-//                print("signed in")
-                self.performSegue(withIdentifier: "toHomeScreen", sender: self)
-                self.dismiss(animated: false, completion: nil)
-//            }
-//            else if user == nil||error != nil{
-//                print("not signed in")
-//            }
-//        }
+        print("touched")
+        guard let emailAddress = emailAddressTextField.text else {return}
+        guard let password = passwordTextField.text else {return}
+        Auth.auth().signIn(withEmail: emailAddress, password: password) { (user, error) in
+            if error == nil && user != nil{
+                print("signed in")
+                self.performSegue(withIdentifier: "loginToSegue", sender: self)
+            }
+            else if user == nil||error != nil{
+                print("not signed in")
+            }
+        }
     }
 
     override func viewDidLoad() {
