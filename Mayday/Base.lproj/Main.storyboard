@@ -236,15 +236,25 @@
                                 <state key="normal" title="MayDay">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M85-Eh-sfj">
+                                <rect key="frame" x="315" y="44" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="T8E-sO-MoQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="yHE-GV-INr"/>
+                                </constraints>
+                                <state key="normal" title="Settings" image="gear-1"/>
                                 <connections>
-                                    <segue destination="hrV-cn-47y" kind="show" id="Zwp-7y-M3d"/>
+                                    <segue destination="hrV-cn-47y" kind="show" id="8PR-cv-eGU"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.11339948695243249" green="0.083079898662252891" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="M85-Eh-sfj" firstAttribute="top" secondItem="Ltt-A6-KB9" secondAttribute="top" id="GGf-ED-kqt"/>
                             <constraint firstItem="Ltt-A6-KB9" firstAttribute="trailing" secondItem="lUF-NC-C3i" secondAttribute="trailing" id="NDC-Uq-WGr"/>
                             <constraint firstItem="lUF-NC-C3i" firstAttribute="centerX" secondItem="UyN-KN-pEv" secondAttribute="centerX" id="Xvn-DH-c88"/>
+                            <constraint firstItem="M85-Eh-sfj" firstAttribute="trailing" secondItem="Ltt-A6-KB9" secondAttribute="trailing" constant="-10" id="eZs-hq-86H"/>
                             <constraint firstItem="Ltt-A6-KB9" firstAttribute="bottom" secondItem="lUF-NC-C3i" secondAttribute="bottom" id="exa-QQ-57K"/>
                             <constraint firstItem="lUF-NC-C3i" firstAttribute="leading" secondItem="Ltt-A6-KB9" secondAttribute="leading" id="qRw-eC-Tdz"/>
                             <constraint firstItem="lUF-NC-C3i" firstAttribute="top" secondItem="Ltt-A6-KB9" secondAttribute="top" constant="20" id="rX0-Mp-MJF"/>
@@ -458,6 +468,9 @@
             <point key="canvasLocation" x="1996" y="714.53201970443354"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gear-1" width="512" height="512"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="v7L-mf-AAw"/>
     </inferredMetricsTieBreakers>
