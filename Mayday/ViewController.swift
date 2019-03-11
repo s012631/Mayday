@@ -7,15 +7,21 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Hello world")
-        print("Goodbye world")
-    }
+        print("view loaded")
 
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if let user = Auth.auth().currentUser{
+            self.performSegue(withIdentifier: "toHomeScreen", sender: self)
+        }
+    }
 
 }
 
