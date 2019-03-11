@@ -11,6 +11,7 @@ import FirebaseAuth
 
 class LoginViewController: UIViewController, UITextFieldDelegate{
 
+    @IBOutlet weak var incorrectInput: UILabel!
     @IBOutlet weak var emailAddressTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signInButton: UIButton!
@@ -24,17 +25,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
         guard let password = passwordTextField.text else {return}
         Auth.auth().signIn(withEmail: emailAddress, password: password) { (user, error) in
             if error == nil && user != nil{
-                print("signed in")
                 self.performSegue(withIdentifier: "loginToSegue", sender: self)
             }
             else if user == nil||error != nil{
                 print("not signed in")
+                self.incorrectInput.isHidden=false
             }
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        incorrectInput.isHidden=true
         passwordTextField.delegate=self
         emailAddressTextField.delegate=self
         emailAddressTextField.becomeFirstResponder()
