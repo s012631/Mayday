@@ -23,9 +23,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
         print("touched")
         guard let emailAddress = emailAddressTextField.text else {return}
         guard let password = passwordTextField.text else {return}
+        
         Auth.auth().signIn(withEmail: emailAddress, password: password) { (user, error) in
+            print("tried")
             if error == nil && user != nil{
                 self.performSegue(withIdentifier: "loginToSegue", sender: self)
+    
+                print("signed in")
             }
             else if user == nil||error != nil{
                 print("not signed in")

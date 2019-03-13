@@ -254,6 +254,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="aVs-2T-Pxg">
+                                <rect key="frame" x="16" y="36" width="76" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.11339948695243249" green="0.083079898662252891" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -275,7 +279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zua-Fm-zVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="716"/>
+            <point key="canvasLocation" x="952.79999999999995" y="715.27093596059115"/>
         </scene>
         <!--SettingsViewController-->
         <scene sceneID="FS3-PP-U4F">
@@ -481,5 +485,6 @@
     </scenes>
     <resources>
         <image name="gear-1" width="512" height="512"/>
+        <image name="image" width="311" height="276"/>
     </resources>
 </document>
