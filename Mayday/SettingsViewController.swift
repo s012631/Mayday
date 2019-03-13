@@ -37,6 +37,8 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
         ref = Database.database().reference()
         
         let emergencyContact1: [String: Any] = ["EmergencyContact1": EmergencyContactsTextFields[0]]
+        let emergencyContact2: [String: Any] = ["EmergencyContact2": EmergencyContactsTextFields[1]]
+        let emergencyContact3: [String: Any] = ["EmergencyContact3": EmergencyContactsTextFields[2]]
         databaseRef.setValue(emergencyContact1)
      
 //        // get current user's userid
