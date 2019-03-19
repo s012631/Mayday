@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Alamofire
 class MayDayHome: UIViewController {
     
+    @IBOutlet weak var MayDayButton: UIButton!
     //Countdown Variables
     @IBOutlet weak var countDownLabel: UILabel!
     var seconds = 5
@@ -21,6 +23,7 @@ class MayDayHome: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        sendSMS()
         setUpImageView()
         
         print("didload")
@@ -35,6 +38,8 @@ class MayDayHome: UIViewController {
         
         //Begin Timer
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+        MayDayButton.isHidden = true
+        
     }
     
     
@@ -58,7 +63,7 @@ class MayDayHome: UIViewController {
         return String(format: "%01d", seconds)
     }
     
-   
+    
     
     
     
@@ -68,7 +73,7 @@ class MayDayHome: UIViewController {
     func setUpImageView(){
         view.addSubview(imageView)
         imageView.image = #imageLiteral(resourceName: "gradSafe.png")
-       
+        
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
         horizontalConstraintMove = imageView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0)
@@ -77,22 +82,39 @@ class MayDayHome: UIViewController {
         imageView.widthAnchor.constraint(equalToConstant: 1250).isActive = true
         view.sendSubviewToBack(imageView)
         
-      
+        
     }
-
+    
     //Background image animation left to right
     func animateBackgroundColor(){
         horizontalConstraintMove?.constant = -(self.imageView.frame.width - self.view.frame.width)
         UIView.animate(withDuration: 10, delay: 0, options: [.autoreverse, .curveLinear, .repeat], animations: {
             self.view.layoutIfNeeded()
-    })
-        
-   
-
-        
-        
-        
-        
+        })
     }
+    
+    //Sends text currently practice
+    func sendSMS(){
+        if let accountSID = ProcessInfo.processInfo.environment["TWILIO_ACCOUNT_SID"]{
+            print(accountSID)
+        }
+        else{
+        print("SID not found")
+        }
+//            let authToken = ProcessInfo.processInfo.environment["TWILIO_AUTH_TOKEN"] {
+//
+//            let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
+//            let parameters = ["From": "+12673607440", "To": "+16109553378", "Body": "Hello from Swift!"]
+//
+//            AF.request(url, method: .post, parameters: parameters)
+//                .authenticate(user: accountSID, password: authToken)
+//                .responseJSON { response in
+//                    debugPrint(response)
+//            }
+//        }
+//
+//        RunLoop.main.run()
+        }
+    
 }
 

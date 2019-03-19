@@ -270,6 +270,7 @@
                         <viewLayoutGuide key="safeArea" id="Ltt-A6-KB9"/>
                     </view>
                     <connections>
+                        <outlet property="MayDayButton" destination="lUF-NC-C3i" id="IxG-n9-2xV"/>
                         <outlet property="countDownLabel" destination="hBu-oz-kYK" id="ZNe-X8-wol"/>
                     </connections>
                 </viewController>
@@ -414,6 +415,7 @@
                                 </state>
                                 <connections>
                                     <action selector="logoutButtonTouchedUp:" destination="hrV-cn-47y" eventType="touchUpInside" id="glJ-TL-bq0"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="fWP-Lg-rJR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -482,4 +484,7 @@
     <resources>
         <image name="gear-1" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="fWP-Lg-rJR"/>
+    </inferredMetricsTieBreakers>
 </document>
