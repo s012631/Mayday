@@ -17,6 +17,9 @@ class MayDayHome: UIViewController {
     var timer = Timer()
     var isTimerRunning = false
     
+    //tells if button has been pressed in order to determine which background to use
+    var isPressed = false
+    
     //BG Variables
     let imageView = UIImageView()
     var horizontalConstraintMove : NSLayoutConstraint?
@@ -34,8 +37,10 @@ class MayDayHome: UIViewController {
     }
     
     @IBAction func MayDayButton(_ sender: UIButton) {
-        countDownLabel.isHidden = false
+        isPressed = true
         
+        viewDidLoad()
+        setUpImageView()
         //Begin Timer
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
         MayDayButton.isHidden = true
@@ -72,6 +77,8 @@ class MayDayHome: UIViewController {
     //Sets up background image
     func setUpImageView(){
         view.addSubview(imageView)
+        
+        if(isPressed == false){
         imageView.image = #imageLiteral(resourceName: "gradSafe.png")
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -81,6 +88,18 @@ class MayDayHome: UIViewController {
         imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
         imageView.widthAnchor.constraint(equalToConstant: 1250).isActive = true
         view.sendSubviewToBack(imageView)
+        }
+        else if(isPressed == true){
+            imageView.image = UIImage(named: "gradDanger")
+            
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+            imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+            horizontalConstraintMove = imageView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0)
+            horizontalConstraintMove?.isActive = true
+            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
+            imageView.widthAnchor.constraint(equalToConstant: 1250).isActive = true
+            view.sendSubviewToBack(imageView)
+        }
         
         
     }
