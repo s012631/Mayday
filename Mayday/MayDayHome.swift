@@ -9,7 +9,10 @@
 import UIKit
 class MayDayHome: UIViewController {
     
+    //Outlet to hide and unhide the cancel button
+    @IBOutlet weak var cancelButtonLabel: UIButton!
     //Countdown Variables
+    @IBOutlet weak var maydayButtonLabel: UIButton!
     @IBOutlet weak var countDownLabel: UILabel!
     var seconds = 5
     var timer = Timer()
@@ -24,6 +27,9 @@ class MayDayHome: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        maydayButtonLabel.isHidden=false
+        countDownLabel.isHidden=true
+        cancelButtonLabel.isHidden=true
         setUpImageView()
         
         print("didload")
@@ -35,9 +41,10 @@ class MayDayHome: UIViewController {
     
     @IBAction func MayDayButton(_ sender: UIButton) {
         isPressed = true
-        
-        viewDidLoad()
-        setUpImageView()
+        //swap visible labels
+        maydayButtonLabel.isHidden=true
+        countDownLabel.isHidden=false
+        cancelButtonLabel.isHidden=false
         //Begin Timer
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
@@ -50,6 +57,11 @@ class MayDayHome: UIViewController {
         if seconds != 0 {
             seconds -= 1
         } else {
+            setUpImageView()
+            maydayButtonLabel.isHidden=false
+            countDownLabel.isHidden=true
+            cancelButtonLabel.isHidden=true
+            isPressed = false
             endTimer()
         }
     }
@@ -63,11 +75,18 @@ class MayDayHome: UIViewController {
         return String(format: "%01d", seconds)
     }
     
-   
-    
-    
-    
-    
+    //When pressed the countdown will stop and the background will switch back to the default, seconds reset and timer is invalidated
+    @IBAction func cancelButtonPressed(_ sender: UIButton) {
+        maydayButtonLabel.isHidden=false
+        countDownLabel.isHidden=true
+        cancelButtonLabel.isHidden=true
+        endTimer()
+        seconds = 5
+        countDownLabel.text = "\(timeFormatted(seconds))"
+        isPressed = false
+        setUpImageView()
+        
+    }
     
     //Sets up background image
     func setUpImageView(){
@@ -106,7 +125,7 @@ class MayDayHome: UIViewController {
             self.view.layoutIfNeeded()
     })
         
-   
+
 
         
         
