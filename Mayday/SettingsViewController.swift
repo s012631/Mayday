@@ -31,35 +31,34 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
  // link to how to use firebase   https://firebase.google.com/docs/database/ios/read-and-write
     @IBAction func saveButtonTouchedUp(_ sender: UIButton) {
         // need to use database to store everything not an image
+//        guard let uid = Auth.auth().currentUser?.uid else {return}
+//        let databaseRef = Database.database().reference().child("user/\(uid)")
+//        var ref: DatabaseReference!
+//        ref = Database.database().reference()
+        
+        let emergencyContact1: [String: Any] = ["EmergencyContact1": EmergencyContactsTextFields[0].text]
+        let emergencyContact2: [String: Any] = ["EmergencyContact2": EmergencyContactsTextFields[1].text]
+        let emergencyContact3: [String: Any] = ["EmergencyContact3": EmergencyContactsTextFields[2].text]
+ 
+        let phone1: [String: Any] = ["Phone1": PhoneNumbersTextFields[0].text]
+        let phone2: [String: Any] = ["Phone2": PhoneNumbersTextFields[1].text]
+        let phone3: [String: Any] = ["Phone3": PhoneNumbersTextFields[2].text]
+
+        let nameLabel: [String: Any] = ["Name": name.text]
+        
+        let alarm: [String: Any] = ["Alarm": alarmTextField.text]
+        
+    
         guard let uid = Auth.auth().currentUser?.uid else {return}
         let databaseRef = Database.database().reference().child("user/\(uid)")
-        var ref: DatabaseReference!
-        ref = Database.database().reference()
-        
-        let emergencyContact1: [String: Any] = ["EmergencyContact1": EmergencyContactsTextFields[0]]
-        let emergencyContact2: [String: Any] = ["EmergencyContact2": EmergencyContactsTextFields[1]]
-        let emergencyContact3: [String: Any] = ["EmergencyContact3": EmergencyContactsTextFields[2]]
-        databaseRef.setValue(emergencyContact1)
-     
-//        // get current user's userid
-//        guard let uid = Auth.auth().currentUser?.uid else {return}
-//        // get a reference to the storage object
-//        let storage = Storage.storage().reference().child("user/\(uid)")
-//        // image's must be saved as data object's so convert and compress the image
-//
-//        guard let image = imageView?.image, let imageData = UIImageJPEGRepresentation(image, 0.75) else {return}
-//
-//        // store the image
-//        storage.putData(imageData, metadata: StorageMetadata()) { (metaData, error) in
-//            if error == nil && metaData != nil {
-//                storage.downloadURL { url, error in
-//                    guard let downloadURL = url else { return }
-//                    completion(downloadURL)
-//                }
-//            } else {
-//                completion(nil)
-//            }
-//        }
+        //        databaseRef.child("Nickname": nicknameText.text)
+        //        databaseRef.observe(.childAdded) { (snapshot) in
+        databaseRef.updateChildValues(["EmergencyContact1": self.EmergencyContactsTextFields[0].text, "EmergencyContact2": self.EmergencyContactsTextFields[1].text, "EmergencyContact3": self.EmergencyContactsTextFields[2].text, "Phone1": self.PhoneNumbersTextFields[0].text, "Phone2": self.PhoneNumbersTextFields[1].text, "Phone3": self.PhoneNumbersTextFields[2].text, "Name": self.name.text, "Alarm": self.alarmTextField.text], withCompletionBlock: { (Error, DatabaseReference) in
+            if Error != nil{
+                print(Error)
+                return
+            }
+        })
         
     }
     
