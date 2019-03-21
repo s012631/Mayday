@@ -79,15 +79,15 @@ class MayDayHome: UIViewController {
         view.addSubview(imageView)
         
         if(isPressed == false){
-        imageView.image = #imageLiteral(resourceName: "gradSafe.png")
-        
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
-        horizontalConstraintMove = imageView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0)
-        horizontalConstraintMove?.isActive = true
-        imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
-        imageView.widthAnchor.constraint(equalToConstant: 1250).isActive = true
-        view.sendSubviewToBack(imageView)
+            imageView.image = #imageLiteral(resourceName: "gradSafe.png")
+            
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+            imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+            horizontalConstraintMove = imageView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0)
+            horizontalConstraintMove?.isActive = true
+            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
+            imageView.widthAnchor.constraint(equalToConstant: 1250).isActive = true
+            view.sendSubviewToBack(imageView)
         }
         else if(isPressed == true){
             imageView.image = UIImage(named: "gradDanger")
@@ -114,26 +114,23 @@ class MayDayHome: UIViewController {
     
     //Sends text currently practice
     func sendSMS(){
-        if let accountSID = ProcessInfo.processInfo.environment["TWILIO_ACCOUNT_SID"]{
-            print(accountSID)
+        let accountSID = "ACc3a05fd5f0c779f27346d34b22e4a730"
+        let authToken = "06347b68f614f8f0540db1a9e1793b0c"
+        //        if let accountSID = ProcessInfo.processInfo.environment["TWILIO_ACCOUNT_SID"],
+        //            let authToken = ProcessInfo.processInfo.environment["TWILIO_AUTH_TOKEN"] {
+        
+        
+        let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
+        let parameters = ["From": "+12673607440", "To": "+16109553378", "Body": "Hello from Swift!"]
+        
+        Alamofire.request(url, method: .post, parameters: parameters)
+            .authenticate(user: accountSID, password: authToken)
+            .responseJSON { response in
+                debugPrint(response)
         }
-        else{
-        print("SID not found")
-        }
-//            let authToken = ProcessInfo.processInfo.environment["TWILIO_AUTH_TOKEN"] {
-//
-//            let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
-//            let parameters = ["From": "+12673607440", "To": "+16109553378", "Body": "Hello from Swift!"]
-//
-//            AF.request(url, method: .post, parameters: parameters)
-//                .authenticate(user: accountSID, password: authToken)
-//                .responseJSON { response in
-//                    debugPrint(response)
-//            }
-//        }
-//
-//        RunLoop.main.run()
-        }
+    }
     
 }
+
+
 

@@ -13,7 +13,7 @@ target 'Mayday' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
-  pod 'Alamofire', '~> 5.0.0-beta.3'
+  pod 'Alamofire', '~> 4.0'
 
 
 

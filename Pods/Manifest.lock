@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.0.0-beta.3)
+  - Alamofire (4.8.1)
   - Firebase/Auth (5.18.0):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.4.0)
@@ -77,7 +77,7 @@ PODS:
   - TwilioChatClient (2.4.5)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.0.0-beta.3)
+  - Alamofire (~> 4.0)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -103,7 +103,7 @@ SPEC REPOS:
     - TwilioChatClient
 
 SPEC CHECKSUMS:
-  Alamofire: 50d6fa7e8cbe7f84559e86ab641ffd029db655f8
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   Firebase: 02f3281965c075426141a0ce1277e9de6649cab9
   FirebaseAnalytics: 23851fe602c872130a2c5c55040b302120346cc2
   FirebaseAuth: d85d052354447f30b4b2a805ab91b511458b56a6
@@ -119,6 +119,6 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   TwilioChatClient: e24b87a0d00a3a19803703e3330c4a1a80f13f95
 
-PODFILE CHECKSUM: 971a94d6f428887718c7e1aeb25165884746af78
+PODFILE CHECKSUM: 1905176cffe1250928b83796376df2a3ca22e24c
 
 COCOAPODS: 1.5.3
