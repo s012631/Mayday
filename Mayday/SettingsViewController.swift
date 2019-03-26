@@ -30,11 +30,6 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
     
  // link to how to use firebase   https://firebase.google.com/docs/database/ios/read-and-write
     @IBAction func saveButtonTouchedUp(_ sender: UIButton) {
-        // need to use database to store everything not an image
-//        guard let uid = Auth.auth().currentUser?.uid else {return}
-//        let databaseRef = Database.database().reference().child("user/\(uid)")
-//        var ref: DatabaseReference!
-//        ref = Database.database().reference()
         
         let emergencyContact1: [String: Any] = ["EmergencyContact1": EmergencyContactsTextFields[0].text]
         let emergencyContact2: [String: Any] = ["EmergencyContact2": EmergencyContactsTextFields[1].text]
@@ -51,8 +46,6 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
     
         guard let uid = Auth.auth().currentUser?.uid else {return}
         let databaseRef = Database.database().reference().child("user/\(uid)")
-        //        databaseRef.child("Nickname": nicknameText.text)
-        //        databaseRef.observe(.childAdded) { (snapshot) in
         databaseRef.updateChildValues(["EmergencyContact1": self.EmergencyContactsTextFields[0].text, "EmergencyContact2": self.EmergencyContactsTextFields[1].text, "EmergencyContact3": self.EmergencyContactsTextFields[2].text, "Phone1": self.PhoneNumbersTextFields[0].text, "Phone2": self.PhoneNumbersTextFields[1].text, "Phone3": self.PhoneNumbersTextFields[2].text, "Name": self.name.text, "Alarm": self.alarmTextField.text], withCompletionBlock: { (Error, DatabaseReference) in
             if Error != nil{
                 print(Error)
@@ -106,6 +99,21 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
     
     override func viewDidLoad() {
       super.viewDidLoad()
+       
+        guard let uid = Auth.auth().currentUser?.uid else {return}
+        let databaseRef = Database.database().reference().child("user/\(uid)")
+        
+        var userName : String?
+        
+        databaseRef.observe(.childAdded, with: { (snapshot) in
+            if let dictionary = snapshot.value as? [String : AnyObject] {
+                userName = dictionary["Name"] as? String
+                print(userName)
+                
+            }
+        })
+        
+        
         name.delegate = self
         for aTextField in EmergencyContactsTextFields{
             aTextField.delegate = self
@@ -115,99 +123,10 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
         }
         alarmTextField.delegate = self
         name.becomeFirstResponder()
-        
-        // image work
-//        imageView.layer.borderWidth = 1
-//        imageView.layer.masksToBounds = false
-//        imageView.layer.borderColor = UIColor.black.cgColor
-//        imageView.layer.cornerRadius = imageView.frame.height/2
-//        imageView.clipsToBounds = true
-//
-//        imagePicker = UIImagePickerController()
-//        imagePicker?.allowsEditing = true
-//        imagePicker?.sourceType = .photoLibrary
-//        imagePicker?.delegate = self
-//
-//        // Downloading image from storage when view loads
-//        getImageURL(){ url in
-//
-//            let storage = Storage.storage()
-//            guard let imageURL = url else {return}
-//            let ref = storage.reference(forURL: imageURL)
-//
-//            ref.getData(maxSize: 1 * 1024 * 1024) {data, error in
-//                if error == nil && data != nil{
-//                    self.imageView.image = UIImage(data: data!)
-//                    self.reloadInputViews()
-//                }
-//                else{
-//                    print(error?.localizedDescription)
-//                }
-//            }
-//        }
-        
+    
     }
     
-//    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-//        imagePicker?.dismiss(animated: true, completion: nil)
-//    }
-//
-//    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-//        if let pickedImage = info[UIImagePickerControllerEditedImage] as? UIImage{
-//            imageView.image = pickedImage // set the imageView to display the selected image
-//            uploadProfilePicture(pickedImage) {url in
-//                guard let uid = Auth.auth().currentUser?.uid else {return}
-//                guard let imageURL = url else {return}
-//                let database = Database.database().reference().child("users/\(uid)")
-//
-//                let userObject: [String: Any] = ["photoURL": imageURL.absoluteString]
-//
-//                database.setValue(userObject)
-//            }
-//        }
-//        imagePicker?.dismiss(animated: true, completion: nil)
-//    }
-//
-//    func getImageURL(_ completion: @escaping((_ url:String?) -> ())){
-//        guard let uid = Auth.auth().currentUser?.uid else {return}
-//
-//        let databaseRef = Database.database().reference().child("users/\(uid)")
-//
-//        databaseRef.observeSingleEvent(of: .value, with: { snapshot in
-//
-//            let postDict = snapshot.value as? [String : AnyObject] ?? [:]
-//
-//            if let photoURL = postDict["photoURL"] {
-//                completion(photoURL as? String)
-//            }
-//        }) {(error) in
-//            print(error.localizedDescription)
-//        }
-//    }
-//
-//    func uploadProfilePicture(_ image: UIImage, _ completion: @escaping((_ url:URL?) -> ())){
-//        // get current user's userid
-//        guard let uid = Auth.auth().currentUser?.uid else {return}
-//        // get a reference to the storage object
-//        let storage = Storage.storage().reference().child("user/\(uid)")
-//        // image's must be saved as data object's so convert and compress the image
-//
-//        guard let image = imageView?.image, let imageData = UIImageJPEGRepresentation(image, 0.75) else {return}
-//
-//        // store the image
-//        storage.putData(imageData, metadata: StorageMetadata()) { (metaData, error) in
-//            if error == nil && metaData != nil {
-//                storage.downloadURL { url, error in
-//                    guard let downloadURL = url else { return }
-//                    completion(downloadURL)
-//                }
-//            } else {
-//                completion(nil)
-//            }
-//        }
-//    }
-//
-//
-    
+        
+        
 }
 
