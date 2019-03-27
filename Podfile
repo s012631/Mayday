@@ -7,7 +7,6 @@ target 'Mayday' do
   use_frameworks!
 
   # Pods for Mayday
-  pod 'TwilioChatClient', '~> 2.4.2'
 
   pod 'Firebase/Core'
   pod 'Firebase/Auth'

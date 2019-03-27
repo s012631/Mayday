@@ -75,7 +75,6 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
-  - TwilioChatClient (2.4.5)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
@@ -83,7 +82,6 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
-  - TwilioChatClient (~> 2.4.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -101,7 +99,6 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
-    - TwilioChatClient
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
@@ -118,8 +115,7 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
-  TwilioChatClient: e24b87a0d00a3a19803703e3330c4a1a80f13f95
 
-PODFILE CHECKSUM: 0498b027b4a1d82f57b9d39f7fac09de2c13b9ee
+PODFILE CHECKSUM: f3126b38aabfde0cd6b27070399aa0a8c396c2b4
 
 COCOAPODS: 1.5.3
