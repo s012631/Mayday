@@ -102,14 +102,15 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
        
         guard let uid = Auth.auth().currentUser?.uid else {return}
         let databaseRef = Database.database().reference().child("user/\(uid)")
-        
         var userName : String?
         
         databaseRef.observe(.childAdded, with: { (snapshot) in
-            if let dictionary = snapshot.value as? [String : AnyObject] {
+            // This if statement is not executing
+            if let dictionary = snapshot.value as? [String : String] {
+                print("ran")
                 userName = dictionary["Name"] as? String
                 print(userName)
-                
+               
             }
         })
         
