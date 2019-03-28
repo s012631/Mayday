@@ -97,21 +97,51 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
         self.present(imagePicker!, animated: true, completion: nil)
     }
     
-    override func viewDidLoad() {
-      super.viewDidLoad()
-       
+    func getUserInfo(_ completion: @escaping((_ name:String?) -> ())){
         guard let uid = Auth.auth().currentUser?.uid else {return}
         let databaseRef = Database.database().reference().child("user/\(uid)")
         
-        var userName : String?
-        
-        databaseRef.observe(.childAdded, with: { (snapshot) in
-            if let dictionary = snapshot.value as? [String : AnyObject] {
-                userName = dictionary["Name"] as? String
-                print(userName)
-                
+        databaseRef.observeSingleEvent(of: .value, with: { snapshot  in
+            let dictionary = snapshot.value as? [String : AnyObject] ?? [:]
+    
+//            if let userName = dictionary["Name"] {
+//                completion(userName as? String)
+//            }
+            if let userName = dictionary["Name"] {
+                completion(userName as? String)
             }
-        })
+   
+    
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
+    
+    
+    override func viewDidLoad() {
+      super.viewDidLoad()
+       
+//        guard let uid = Auth.auth().currentUser?.uid else {return}
+//        let databaseRef = Database.database().reference().child("user/\(uid)")
+//        var userName : String?
+//
+////        databaseRef.observe(.childAdded, with: { (snapshot) in
+////            // This if statement is not executing
+////            if let dictionary = snapshot.value as? [String : AnyObject] {
+//        databaseRef.observeSingleEvent(of: .value, with: { snapshot  in
+//            let dictionary = snapshot.value as? [String : AnyObject] ?? [:]
+//                print("ran")
+//               // userName = dictionary["Name"] as? String
+//                if let
+//                print(userName)
+//
+//            }
+//        })
+        
+        getUserInfo() { userName in
+            self.name.text = userName
+            self.reloadInputViews()
+        }
         
         
         name.delegate = self
