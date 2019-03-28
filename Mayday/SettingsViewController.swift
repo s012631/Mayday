@@ -97,21 +97,90 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
         self.present(imagePicker!, animated: true, completion: nil)
     }
     
-    override func viewDidLoad() {
-      super.viewDidLoad()
-       
+    func getUserInfo(_ completion: @escaping((_ name:String?, _ contact1: String?, _ contact2: String?, _ contact3: String?, _ alarm: String?, _ phone1: String?, _ phone2: String?, _ phone3: String?)  -> ())){
         guard let uid = Auth.auth().currentUser?.uid else {return}
         let databaseRef = Database.database().reference().child("user/\(uid)")
         
-        var userName : String?
+        var userName: String?
+        var contact1: String?
+        var contact2: String?
+        var contact3: String?
+        var alarm: String?
+        var phone1: String?
+        var phone2: String?
+        var phone3: String?
         
-        databaseRef.observe(.childAdded, with: { (snapshot) in
-            if let dictionary = snapshot.value as? [String : AnyObject] {
-                userName = dictionary["Name"] as? String
-                print(userName)
-                
+        databaseRef.observeSingleEvent(of: .value, with: { snapshot  in
+            let dictionary = snapshot.value as? [String : AnyObject] ?? [:]
+    
+//            if let userName = dictionary["Name"] {
+//                completion(userName as? String)
+//            }
+            if let name = dictionary["Name"] {
+                userName = name as? String
             }
-        })
+            if let eContact1 = dictionary["EmergencyContact1"]{
+                contact1 = eContact1 as? String
+            }
+            if let eContact2 = dictionary["EmergencyContact2"]{
+                contact2 = eContact2 as? String
+            }
+            if let eContact3 = dictionary["EmergencyContact3"]{
+                contact3 = eContact3 as? String
+            }
+            if let alarmCompany = dictionary["Alarm"]{
+                alarm = alarmCompany as? String
+            }
+            if let firstPhone = dictionary["Phone1"]{
+                phone1 = firstPhone as? String
+            }
+            if let secondPhone = dictionary["Phone2"]{
+                phone2 = secondPhone as? String
+            }
+            if let thirdPhone = dictionary["Phone3"]{
+                phone3 = thirdPhone as? String
+            }
+            
+            completion(userName, contact1, contact2, contact3, alarm, phone1, phone2, phone3)
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
+    
+    
+    override func viewDidLoad() {
+      super.viewDidLoad()
+       
+//        guard let uid = Auth.auth().currentUser?.uid else {return}
+//        let databaseRef = Database.database().reference().child("user/\(uid)")
+//        var userName : String?
+//
+////        databaseRef.observe(.childAdded, with: { (snapshot) in
+////            // This if statement is not executing
+////            if let dictionary = snapshot.value as? [String : AnyObject] {
+//        databaseRef.observeSingleEvent(of: .value, with: { snapshot  in
+//            let dictionary = snapshot.value as? [String : AnyObject] ?? [:]
+//                print("ran")
+//               // userName = dictionary["Name"] as? String
+//                if let
+//                print(userName)
+//
+//            }
+//        })
+        
+//        getUserInfo() { userName in
+        getUserInfo() { userName, contact1, contact2, contact3, alarm, phone1, phone2, phone3 in
+            self.name.text = userName
+            self.EmergencyContactsTextFields[0].text = contact1
+            self.EmergencyContactsTextFields[1].text = contact2
+            self.EmergencyContactsTextFields[2].text = contact3
+            self.PhoneNumbersTextFields[0].text = phone1
+            self.PhoneNumbersTextFields[1].text = phone2
+            self.PhoneNumbersTextFields[2].text = phone3
+            self.alarmTextField.text = alarm
+            self.reloadInputViews()
+        }
         
         
         name.delegate = self
