@@ -134,7 +134,7 @@ class MayDayHome: UIViewController {
         let accountSID = "ACc3a05fd5f0c779f27346d34b22e4a730"
         let authToken = "06347b68f614f8f0540db1a9e1793b0c"
         let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
-        let parameters = ["From": "+12673607440", "To": "+16108888295", "Body": "Mayday: Your friend Andrew is in Danger!"]
+        let parameters = ["From": "+12673607440", "To": "+16109553378", "Body": "Mayday: Your friend Andrew is in Danger!"]
         print("sms processsssssssssssssssss")
         Alamofire.request(url, method: .post, parameters: parameters)
             .authenticate(user: accountSID, password: authToken)
