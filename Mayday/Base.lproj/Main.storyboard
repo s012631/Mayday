@@ -117,22 +117,6 @@
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="302.95566502463055"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="QPw-s3-hOD">
-            <objects>
-                <viewController id="uXa-oL-t3G" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uSO-FN-eTM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.1333333333" green="0.1843137255" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.1333333333" green="0.1843137255" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="R3M-5Z-h8U"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mZ2-Fe-Jub" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1286" y="-81"/>
-        </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="gTz-H7-IbS">
             <objects>
@@ -273,10 +257,6 @@
                                     <segue destination="hrV-cn-47y" kind="show" id="J8A-iO-ylK"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="aVs-2T-Pxg">
-                                <rect key="frame" x="16" y="36" width="76" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eks-GR-oWx">
                                 <rect key="frame" x="165.66666666666666" y="360.66666666666669" width="44" height="91"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="70"/>
@@ -530,7 +510,6 @@
     </scenes>
     <resources>
         <image name="gear-1" width="512" height="512"/>
-        <image name="image" width="311" height="276"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="tz6-yW-deI"/>
