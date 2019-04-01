@@ -15,6 +15,7 @@ class MayDayHome: UIViewController {
     //Countdown Variables
     @IBOutlet weak var maydayButtonLabel: UIButton!
     @IBOutlet weak var countDownLabel: UILabel!
+    @IBOutlet weak var settingsButtonOutlet: UIButton!
     var seconds = 5
     var timer = Timer()
     var isTimerRunning = false
@@ -63,6 +64,7 @@ class MayDayHome: UIViewController {
             maydayButtonLabel.isHidden=false
             countDownLabel.isHidden=true
             cancelButtonLabel.isHidden=true
+            settingsButtonOutlet.isHidden=true
             isPressed = false
             endTimer()
         }
