@@ -510,6 +510,7 @@
                         <outletCollection property="PhoneNumbersTextFields" destination="p4Z-6W-IfV" collectionClass="NSMutableArray" id="Vna-AJ-Y4e"/>
                         <outletCollection property="PhoneNumbersTextFields" destination="4vM-xu-vjX" collectionClass="NSMutableArray" id="G18-n3-E9q"/>
                         <outletCollection property="PhoneNumbersTextFields" destination="m4g-A4-eF5" collectionClass="NSMutableArray" id="Zec-vL-QtP"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="settingsToLogin" id="aEy-vQ-u7j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhj-FY-yh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -523,5 +524,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="tz6-yW-deI"/>
+        <segue reference="aEy-vQ-u7j"/>
     </inferredMetricsTieBreakers>
 </document>

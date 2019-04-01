@@ -55,12 +55,11 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
         
     }
     
-    
-    
 
     @IBAction func logoutButtonTouchedUp(_ sender: UIButton){
         try! Auth.auth().signOut()
-        self.dismiss(animated: true, completion: nil)
+        self.performSegue(withIdentifier: "settingsToLogin", sender: self)
+//        self.dismiss(animated: true, completion: nil)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
