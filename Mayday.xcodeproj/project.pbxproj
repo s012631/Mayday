@@ -20,6 +20,7 @@
 		7E963E06221B8003007BA382 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E963E04221B8003007BA382 /* GoogleService-Info.plist */; };
 		7E963E07221B8003007BA382 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E963E04221B8003007BA382 /* GoogleService-Info.plist */; };
 		7E963E09221B800D007BA382 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E963E08221B800D007BA382 /* GoogleService-Info.plist */; };
+		A3C9707322538FCE001EA5C6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C9707222538FCE001EA5C6 /* CoreLocation.framework */; };
 		AC6929A2221464C900B1A2BE /* MayDayHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6929A1221464C900B1A2BE /* MayDayHome.swift */; };
 		ACA7848121E649E500A21E68 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA7848021E649E500A21E68 /* SettingsViewController.swift */; };
 		DA3A5B7AA304C5DA745770AB /* Pods_Mayday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422A22E9EC17F69210C0311B /* Pods_Mayday.framework */; };
@@ -63,6 +64,7 @@
 		7E8495A021DCF998000B9395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E963E04221B8003007BA382 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Mayday/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7E963E08221B800D007BA382 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3C9707222538FCE001EA5C6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AC6929A1221464C900B1A2BE /* MayDayHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayDayHome.swift; sourceTree = "<group>"; };
 		ACA7848021E649E500A21E68 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C9707322538FCE001EA5C6 /* CoreLocation.framework in Frameworks */,
 				DA3A5B7AA304C5DA745770AB /* Pods_Mayday.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +99,7 @@
 		29344F10025311200FF55E23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A3C9707222538FCE001EA5C6 /* CoreLocation.framework */,
 				422A22E9EC17F69210C0311B /* Pods_Mayday.framework */,
 			);
 			name = Frameworks;

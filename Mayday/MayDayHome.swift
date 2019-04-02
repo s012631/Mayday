@@ -128,6 +128,10 @@ class MayDayHome: UIViewController {
         })
     }
     
+    //retrieves location
+
+    
+    
     //Sends text currently practice
     //How i did it: https://www.twilio.com/blog/2018/03/sending-text-messages-in-swift-with-twilio.html
     func sendSMS(){
