@@ -15,6 +15,7 @@ class MayDayHome: UIViewController {
     //Countdown Variables
     @IBOutlet weak var maydayButtonLabel: UIButton!
     @IBOutlet weak var countDownLabel: UILabel!
+    @IBOutlet weak var settingsButtonOutlet: UIButton!
     var seconds = 5
     var timer = Timer()
     var isTimerRunning = false
@@ -63,6 +64,7 @@ class MayDayHome: UIViewController {
             maydayButtonLabel.isHidden=false
             countDownLabel.isHidden=true
             cancelButtonLabel.isHidden=true
+            settingsButtonOutlet.isHidden=true
             isPressed = false
             endTimer()
         }
@@ -134,7 +136,7 @@ class MayDayHome: UIViewController {
         let accountSID = "ACc3a05fd5f0c779f27346d34b22e4a730"
         let authToken = "06347b68f614f8f0540db1a9e1793b0c"
         let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
-        let parameters = ["From": "+12673607440", "To": "+16108888295", "Body": "Mayday: Your friend Andrew is in Danger!"]
+        let parameters = ["From": "+12673607440", "To": "+16109553378", "Body": "Mayday: Your friend Andrew is in Danger!"]
         print("sms processsssssssssssssssss")
         Alamofire.request(url, method: .post, parameters: parameters)
             .authenticate(user: accountSID, password: authToken)
