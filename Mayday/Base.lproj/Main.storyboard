@@ -146,8 +146,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eYu-TQ-1PJ">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eYu-TQ-1PJ">
                                 <rect key="frame" x="37.666666666666657" y="144" width="300" height="30"/>
+                                <color key="backgroundColor" red="0.01176470588" green="0.043137254899999998" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ODv-2A-KOj"/>
                                     <constraint firstAttribute="width" constant="300" id="PoG-1a-Hiq"/>
@@ -157,13 +158,14 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4E-w1-M5c">
-                                <rect key="frame" x="37" y="104" width="74" height="32"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <rect key="frame" x="37" y="113.66666666666667" width="54.666666666666657" height="22.333333333333329"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2xm-m7-5WE">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2xm-m7-5WE">
                                 <rect key="frame" x="37.666666666666657" y="236" width="300" height="30"/>
+                                <color key="backgroundColor" red="0.01176470588" green="0.043137254899999998" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="B1X-8s-dci"/>
                                     <constraint firstAttribute="height" constant="30" id="v1x-4V-KNz"/>
@@ -173,13 +175,14 @@
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEE-z9-1c3">
-                                <rect key="frame" x="37" y="194" width="127" height="34"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <rect key="frame" x="36.999999999999993" y="194" width="95.333333333333314" height="34"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oFA-Iu-S04">
-                                <rect key="frame" x="37.666666666666657" y="326" width="300" height="30"/>
+                                <rect key="frame" x="37.666666666666657" y="316.33333333333331" width="300" height="30"/>
+                                <color key="backgroundColor" red="0.01176470588" green="0.043137254899999998" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="BET-pc-T4A"/>
                                     <constraint firstAttribute="height" constant="30" id="i7o-hM-kGo"/>
@@ -189,13 +192,13 @@
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9E3-ge-TCs">
-                                <rect key="frame" x="36.999999999999986" y="286" width="230.66666666666663" height="32"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <rect key="frame" x="37" y="286" width="172" height="22.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMO-V0-9XL">
-                                <rect key="frame" x="146" y="377" width="83" height="39"/>
+                                <rect key="frame" x="146" y="367.33333333333331" width="83" height="39"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -210,8 +213,29 @@
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="Gu7-Tk-qad">
+                                <rect key="frame" x="120" y="109" width="300" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="QU1-dR-8fm"/>
+                                    <constraint firstAttribute="height" constant="1" id="btk-CK-IT7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="EJL-Kg-Rk8">
+                                <rect key="frame" x="130" y="119" width="300" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="HDC-jY-KHa"/>
+                                    <constraint firstAttribute="width" constant="300" id="la4-RZ-GFg"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="VT7-YI-cxZ">
+                                <rect key="frame" x="140" y="129" width="300" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Gf6-O9-iN6"/>
+                                    <constraint firstAttribute="width" constant="300" id="LKo-xa-WyT"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.13333333333333333" green="0.18431372549019609" blue="0.51764705882352946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.01176470588" green="0.043137254899999998" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eYu-TQ-1PJ" firstAttribute="top" secondItem="a4E-w1-M5c" secondAttribute="bottom" constant="8" id="12D-4P-6y2"/>
                             <constraint firstItem="oFA-Iu-S04" firstAttribute="top" secondItem="9E3-ge-TCs" secondAttribute="bottom" constant="8" id="1Om-Y1-OMw"/>
@@ -572,6 +596,6 @@
         <image name="line" width="626" height="2"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aEy-vQ-u7j"/>
+        <segue reference="i61-tY-Vrq"/>
     </inferredMetricsTieBreakers>
 </document>
