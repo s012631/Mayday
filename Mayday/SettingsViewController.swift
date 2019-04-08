@@ -127,11 +127,9 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
     
     func setUserInfo(){
         information = Settings()
-        print("information")
-        if let info = information{
-            print("is assigning")
+        information?.getUserInfo({ (userName, contact1, contact2, contact3, alarm, phone1, phone2, phone3, safetyCode) in
+            if let info = self.information{
             self.name.text = info.nameRef
-            print(info.nameRef)
             self.EmergencyContactsTextFields[0].text = info.contact1Ref
             self.EmergencyContactsTextFields[1].text = info.contact2Ref
             self.EmergencyContactsTextFields[2].text = info.contact3Ref
@@ -141,7 +139,23 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
             self.alarmTextField.text = info.alarmRef
             self.safetyReleaseTextField.text = info.safetyCodeRef
             self.reloadInputViews()
-        }
+            }
+        })
+        
+//        if let info = information{
+//            print("is assigning")
+//            self.name.text = info.nameRef
+//            print(info.nameRef)
+//            self.EmergencyContactsTextFields[0].text = info.contact1Ref
+//            self.EmergencyContactsTextFields[1].text = info.contact2Ref
+//            self.EmergencyContactsTextFields[2].text = info.contact3Ref
+//            self.PhoneNumbersTextFields[0].text = info.phone1Ref
+//            self.PhoneNumbersTextFields[1].text = info.phone2Ref
+//            self.PhoneNumbersTextFields[2].text = info.phone3Ref
+//            self.alarmTextField.text = info.alarmRef
+//            self.safetyReleaseTextField.text = info.safetyCodeRef
+//            self.reloadInputViews()
+//        }
     }
     
 //    func getUserInfo(_ completion: @escaping((_ name:String?, _ contact1: String?, _ contact2: String?, _ contact3: String?, _ alarm: String?, _ phone1: String?, _ phone2: String?, _ phone3: String?, _ safetyCode: String?)  -> ())){
