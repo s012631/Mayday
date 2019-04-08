@@ -11,14 +11,25 @@ import FirebaseAuth
 import FirebaseStorage
 import FirebaseDatabase
 
-class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate {
+class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
     
     var imagePicker : UIImagePickerController?
     
     @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var profileImage: UIButton!
     
+//    @IBAction func profilePic(_ sender: Any) {
+//        let image = UIImagePickerController()
+//        image.delegate=self
+//        image.sourceType = UIImagePickerController.SourceType.camera
+//        image.allowsEditing = false
+//        self.present(image, animated: true){
+//            //After it is complete
+//        }
+//        profileImage.setImage(image, for: <#T##UIControl.State#>)
+//    }
     @IBOutlet var EmergencyContactsTextFields: [UITextField]!
     
     @IBOutlet var PhoneNumbersTextFields: [UITextField]!
