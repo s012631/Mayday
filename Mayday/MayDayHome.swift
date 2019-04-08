@@ -30,6 +30,8 @@ class MayDayHome: UIViewController {
     let imageView = UIImageView()
     var horizontalConstraintMove : NSLayoutConstraint?
     
+    let info = Settings()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         sendSMS()
@@ -151,13 +153,14 @@ class MayDayHome: UIViewController {
         })
     }
     
+    
     //Sends text currently practice
     //How i did it: https://www.twilio.com/blog/2018/03/sending-text-messages-in-swift-with-twilio.html
     func sendSMS(){
         let accountSID = "ACc3a05fd5f0c779f27346d34b22e4a730"
         let authToken = "06347b68f614f8f0540db1a9e1793b0c"
         let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
-        let parameters = ["From": "+12673607440", "To": "+16109553378", "Body": "Mayday: Your friend Andrew is in Danger!"]
+        let parameters = ["From": "+12673607440", "To": info.phone1Ref, "Body": "Mayday: Your friend Andrew is in Danger!"]
         print("sms processsssssssssssssssss")
         Alamofire.request(url, method: .post, parameters: parameters)
             .authenticate(user: accountSID, password: authToken)

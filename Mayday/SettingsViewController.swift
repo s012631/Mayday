@@ -39,7 +39,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
     @IBOutlet weak var safetyReleaseTextField: UITextField!
     
     @IBOutlet weak var saveButton: UIButton!
-    
+
     var codeText = ""
     
     var information: Settings?
