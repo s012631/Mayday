@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="height" constant="30" id="2yp-ly-BTq"/>
                                     <constraint firstAttribute="width" constant="300" id="aAF-DB-QCs"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
@@ -259,6 +259,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUF-NC-C3i">
                                 <rect key="frame" x="0.0" y="64" width="375" height="714"/>
+                                <color key="backgroundColor" red="0.01176470588" green="0.043137254899999998" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
                                 <state key="normal" title="MayDay">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -300,14 +301,19 @@
                                     <action selector="cancelButtonPressed:" destination="wv1-7N-CF6" eventType="touchUpInside" id="tKa-3i-o3z"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5wA-Rf-2Wq">
-                                <rect key="frame" x="139" y="558.66666666666663" width="97" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5wA-Rf-2Wq">
+                                <rect key="frame" x="139" y="558.66666666666663" width="97" height="23"/>
+                                <color key="backgroundColor" red="0.01176470588" green="0.043137254899999998" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="14G-QA-ZbL">
+                                <rect key="frame" x="139" y="580" width="97" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.11339948695243249" green="0.083079898662252891" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.01176470588" green="0.043137254899999998" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ltt-A6-KB9" firstAttribute="trailing" secondItem="5wA-Rf-2Wq" secondAttribute="trailing" constant="139" id="12J-0Q-4TC"/>
                             <constraint firstItem="5wA-Rf-2Wq" firstAttribute="leading" secondItem="Ltt-A6-KB9" secondAttribute="leading" constant="139" id="9xJ-qY-aYx"/>
