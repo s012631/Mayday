@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D7ED2902254F20000C456FD /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ED28F2254F20000C456FD /* Settings.swift */; };
 		7E6C69E421E4E41300D48B25 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C69E321E4E41300D48B25 /* LoginViewController.swift */; };
 		7E6C69E621E4E53A00D48B25 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C69E521E4E53A00D48B25 /* SignUpViewController.swift */; };
 		7E84957F21DCF98B000B9395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84957E21DCF98B000B9395 /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		10340DCE9CFCA93CA93F9468 /* Pods-Mayday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mayday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mayday/Pods-Mayday.debug.xcconfig"; sourceTree = "<group>"; };
+		3D7ED28F2254F20000C456FD /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		3E6A835013C24276BE2E42F6 /* Pods-Mayday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mayday.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mayday/Pods-Mayday.release.xcconfig"; sourceTree = "<group>"; };
 		422A22E9EC17F69210C0311B /* Pods_Mayday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mayday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6C69E321E4E41300D48B25 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				7E84957E21DCF98B000B9395 /* AppDelegate.swift */,
+				3D7ED28F2254F20000C456FD /* Settings.swift */,
 				AC6929A1221464C900B1A2BE /* MayDayHome.swift */,
 				7E84958021DCF98B000B9395 /* ViewController.swift */,
 				7E84958221DCF98B000B9395 /* Main.storyboard */,
@@ -365,6 +368,7 @@
 				AC6929A2221464C900B1A2BE /* MayDayHome.swift in Sources */,
 				7E84958121DCF98B000B9395 /* ViewController.swift in Sources */,
 				7E6C69E621E4E53A00D48B25 /* SignUpViewController.swift in Sources */,
+				3D7ED2902254F20000C456FD /* Settings.swift in Sources */,
 				7E84957F21DCF98B000B9395 /* AppDelegate.swift in Sources */,
 				ACA7848121E649E500A21E68 /* SettingsViewController.swift in Sources */,
 			);

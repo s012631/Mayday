@@ -318,12 +318,13 @@
                         <outlet property="cancelButtonLabel" destination="AnV-RY-E12" id="qdj-Hv-ZbV"/>
                         <outlet property="countDownLabel" destination="Eks-GR-oWx" id="us7-0o-UDD"/>
                         <outlet property="maydayButtonLabel" destination="lUF-NC-C3i" id="s83-8Y-icq"/>
+                        <outlet property="safetyReleaseTextField" destination="5wA-Rf-2Wq" id="D70-3U-LN1"/>
                         <outlet property="settingsButtonOutlet" destination="lET-qb-Xf8" id="Zqg-MK-tMR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zua-Fm-zVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="952.79999999999995" y="715.27093596059115"/>
+            <point key="canvasLocation" x="1287" y="707"/>
         </scene>
         <!--SettingsViewController-->
         <scene sceneID="FS3-PP-U4F">
@@ -476,6 +477,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wM8-mO-XTZ">
+                                <rect key="frame" x="13" y="44" width="92" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="arrow"/>
+                                <connections>
+                                    <action selector="backButtonTouchedUp:" destination="hrV-cn-47y" eventType="touchUpInside" id="b2A-2l-bgg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.13321609337914506" green="0.046021343434298999" blue="0.538586611675127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -540,19 +549,21 @@
                         <outletCollection property="PhoneNumbersTextFields" destination="4vM-xu-vjX" collectionClass="NSMutableArray" id="G18-n3-E9q"/>
                         <outletCollection property="PhoneNumbersTextFields" destination="m4g-A4-eF5" collectionClass="NSMutableArray" id="Zec-vL-QtP"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="settingsToLogin" id="aEy-vQ-u7j"/>
+                        <segue destination="wv1-7N-CF6" kind="presentation" identifier="settingsToMayday" id="TR7-Xq-ymR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhj-FY-yh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1888.8" y="714.53201970443354"/>
+            <point key="canvasLocation" x="2509.5999999999999" y="237.93103448275863"/>
         </scene>
     </scenes>
     <resources>
+        <image name="arrow" width="400" height="400"/>
         <image name="gear-1" width="512" height="512"/>
         <image name="line" width="626" height="2"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tz6-yW-deI"/>
+        <segue reference="TR7-Xq-ymR"/>
         <segue reference="aEy-vQ-u7j"/>
     </inferredMetricsTieBreakers>
 </document>
