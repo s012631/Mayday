@@ -318,12 +318,13 @@
                         <outlet property="cancelButtonLabel" destination="AnV-RY-E12" id="qdj-Hv-ZbV"/>
                         <outlet property="countDownLabel" destination="Eks-GR-oWx" id="us7-0o-UDD"/>
                         <outlet property="maydayButtonLabel" destination="lUF-NC-C3i" id="s83-8Y-icq"/>
+                        <outlet property="safetyReleaseTextField" destination="5wA-Rf-2Wq" id="D70-3U-LN1"/>
                         <outlet property="settingsButtonOutlet" destination="lET-qb-Xf8" id="Zqg-MK-tMR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zua-Fm-zVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="952.79999999999995" y="715.27093596059115"/>
+            <point key="canvasLocation" x="1287" y="707"/>
         </scene>
         <!--SettingsViewController-->
         <scene sceneID="FS3-PP-U4F">
@@ -476,26 +477,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfi-KN-wZO">
-                                <rect key="frame" x="132" y="84" width="111.66666666666669" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="xfi-KN-wZO" secondAttribute="height" multiplier="335:384" id="3vx-CM-MJN"/>
-                                    <constraint firstAttribute="height" constant="128" id="zwC-fF-WDI"/>
-                                </constraints>
-                                <state key="normal" image="splash"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wM8-mO-XTZ">
+                                <rect key="frame" x="13" y="44" width="92" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="arrow"/>
                                 <connections>
-                                    <action selector="profilePic:forEvent:" destination="hrV-cn-47y" eventType="touchUpInside" id="AZ5-ZH-kPC"/>
+                                    <action selector="backButtonTouchedUp:" destination="hrV-cn-47y" eventType="touchUpInside" id="b2A-2l-bgg"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.13321609337914506" green="0.046021343434298999" blue="0.538586611675127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xfi-KN-wZO" firstAttribute="top" secondItem="flS-8Z-GUm" secondAttribute="top" constant="50" id="3KD-Ec-fa5"/>
                             <constraint firstItem="PEJ-zl-U7m" firstAttribute="trailing" secondItem="llj-1N-udP" secondAttribute="trailing" constant="176" id="3Yl-fk-O89"/>
                             <constraint firstItem="u5q-fR-T6E" firstAttribute="top" secondItem="D1a-9t-rS7" secondAttribute="bottom" constant="20" id="4Zb-Tn-xD1"/>
                             <constraint firstItem="PEJ-zl-U7m" firstAttribute="bottom" secondItem="BWS-PM-bhn" secondAttribute="bottom" constant="100" id="4ee-S6-gKd"/>
                             <constraint firstItem="PEJ-zl-U7m" firstAttribute="trailing" secondItem="D3L-Rt-dze" secondAttribute="trailing" constant="161" id="5d7-pF-eOd"/>
-                            <constraint firstItem="xfi-KN-wZO" firstAttribute="centerX" secondItem="flS-8Z-GUm" secondAttribute="centerX" id="6Qy-d2-NJz"/>
                             <constraint firstItem="PEJ-zl-U7m" firstAttribute="trailing" secondItem="4vM-xu-vjX" secondAttribute="trailing" constant="16" id="8OP-Q0-0Rr"/>
                             <constraint firstItem="5qD-iT-Yuh" firstAttribute="top" secondItem="llj-1N-udP" secondAttribute="bottom" constant="5" id="ASh-K0-P18"/>
                             <constraint firstItem="u5q-fR-T6E" firstAttribute="leading" secondItem="PEJ-zl-U7m" secondAttribute="leading" constant="16" id="C1p-BU-m6Q"/>
@@ -504,10 +500,10 @@
                             <constraint firstItem="VsZ-59-sWd" firstAttribute="centerX" secondItem="flS-8Z-GUm" secondAttribute="centerX" id="CiX-b2-77e"/>
                             <constraint firstItem="PEJ-zl-U7m" firstAttribute="trailing" secondItem="m4g-A4-eF5" secondAttribute="trailing" constant="16" id="Eso-LB-bIJ"/>
                             <constraint firstItem="142-UB-MGs" firstAttribute="leading" secondItem="PEJ-zl-U7m" secondAttribute="leading" constant="50" id="GsJ-3P-Iya"/>
+                            <constraint firstItem="f1k-dP-jiG" firstAttribute="top" secondItem="PEJ-zl-U7m" secondAttribute="top" constant="50" id="I7c-14-Czz"/>
                             <constraint firstItem="PEJ-zl-U7m" firstAttribute="trailing" secondItem="J08-cK-xet" secondAttribute="trailing" constant="176" id="J66-4z-jhg"/>
                             <constraint firstItem="5qD-iT-Yuh" firstAttribute="leading" secondItem="PEJ-zl-U7m" secondAttribute="leading" constant="40" id="JEP-44-fPp"/>
                             <constraint firstItem="WPH-dX-wDO" firstAttribute="leading" secondItem="PEJ-zl-U7m" secondAttribute="leading" constant="40" id="Kwo-pi-ks6"/>
-                            <constraint firstItem="xfi-KN-wZO" firstAttribute="top" secondItem="flS-8Z-GUm" secondAttribute="top" constant="50" id="LPX-zW-nax"/>
                             <constraint firstItem="VsZ-59-sWd" firstAttribute="top" secondItem="BWS-PM-bhn" secondAttribute="bottom" constant="24" id="Nlw-9D-M6I"/>
                             <constraint firstItem="142-UB-MGs" firstAttribute="top" secondItem="WPH-dX-wDO" secondAttribute="bottom" constant="8" id="Ps5-DP-p3c"/>
                             <constraint firstItem="142-UB-MGs" firstAttribute="centerX" secondItem="flS-8Z-GUm" secondAttribute="centerX" id="ShL-Lf-VGM"/>
@@ -528,6 +524,7 @@
                             <constraint firstItem="J08-cK-xet" firstAttribute="top" secondItem="u5q-fR-T6E" secondAttribute="bottom" constant="20" id="mRg-eE-b8h"/>
                             <constraint firstItem="PEJ-zl-U7m" firstAttribute="trailing" secondItem="EQq-3Y-YSh" secondAttribute="trailing" constant="50" id="mau-Oq-hgf"/>
                             <constraint firstItem="llj-1N-udP" firstAttribute="leading" secondItem="PEJ-zl-U7m" secondAttribute="leading" constant="16" id="nBW-nz-QAP"/>
+                            <constraint firstItem="f1k-dP-jiG" firstAttribute="centerX" secondItem="flS-8Z-GUm" secondAttribute="centerX" id="o4g-zc-SKj"/>
                             <constraint firstItem="m4g-A4-eF5" firstAttribute="top" secondItem="4vM-xu-vjX" secondAttribute="bottom" constant="20" id="pkG-sw-oGA"/>
                             <constraint firstItem="EQq-3Y-YSh" firstAttribute="top" secondItem="D3L-Rt-dze" secondAttribute="bottom" constant="5" id="qX8-Jc-Sqd"/>
                             <constraint firstItem="D3L-Rt-dze" firstAttribute="top" secondItem="OfA-jY-DVc" secondAttribute="bottom" constant="5" id="rE5-aD-uHI"/>
@@ -541,6 +538,7 @@
                     </view>
                     <connections>
                         <outlet property="alarmTextField" destination="OfA-jY-DVc" id="dbD-p5-xSJ"/>
+                        <outlet property="imageView" destination="f1k-dP-jiG" id="Kfw-6S-J2g"/>
                         <outlet property="name" destination="142-UB-MGs" id="nKE-we-uLL"/>
                         <outlet property="safetyReleaseTextField" destination="EQq-3Y-YSh" id="awd-h6-kRx"/>
                         <outlet property="saveButton" destination="atZ-0f-a8o" id="Wwo-Ka-OEM"/>
@@ -551,20 +549,21 @@
                         <outletCollection property="PhoneNumbersTextFields" destination="4vM-xu-vjX" collectionClass="NSMutableArray" id="G18-n3-E9q"/>
                         <outletCollection property="PhoneNumbersTextFields" destination="m4g-A4-eF5" collectionClass="NSMutableArray" id="Zec-vL-QtP"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="settingsToLogin" id="aEy-vQ-u7j"/>
+                        <segue destination="wv1-7N-CF6" kind="presentation" identifier="settingsToMayday" id="TR7-Xq-ymR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhj-FY-yh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1888.8" y="714.53201970443354"/>
+            <point key="canvasLocation" x="2509.5999999999999" y="237.93103448275863"/>
         </scene>
     </scenes>
     <resources>
+        <image name="arrow" width="400" height="400"/>
         <image name="gear-1" width="512" height="512"/>
         <image name="line" width="626" height="2"/>
-        <image name="splash" width="512" height="384"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tz6-yW-deI"/>
+        <segue reference="TR7-Xq-ymR"/>
         <segue reference="aEy-vQ-u7j"/>
     </inferredMetricsTieBreakers>
 </document>

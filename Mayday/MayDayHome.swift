@@ -16,9 +16,12 @@ class MayDayHome: UIViewController {
     @IBOutlet weak var maydayButtonLabel: UIButton!
     @IBOutlet weak var countDownLabel: UILabel!
     @IBOutlet weak var settingsButtonOutlet: UIButton!
+    @IBOutlet weak var safetyReleaseTextField: UITextField!
     var seconds = 5
     var timer = Timer()
     var isTimerRunning = false
+    
+    var finalCode = ""
     
     //tells if button has been pressed in order to determine which background to use
     var isPressed = false
@@ -33,8 +36,9 @@ class MayDayHome: UIViewController {
         maydayButtonLabel.isHidden=false
         countDownLabel.isHidden=true
         cancelButtonLabel.isHidden=true
+        safetyReleaseTextField.isHidden=true
         setUpImageView()
-        
+        print(finalCode + ">>>>")
         print("didload")
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -65,9 +69,26 @@ class MayDayHome: UIViewController {
             countDownLabel.isHidden=true
             cancelButtonLabel.isHidden=true
             settingsButtonOutlet.isHidden=true
+            safetyReleaseTextField.isHidden=false
+            safetyReleaseTextField.keyboardType = UIKeyboardType.numberPad
             isPressed = false
             endTimer()
+            // If safety release text equals the safety release code from settings page, reset Mayday
+            print(finalCode)
+            if safetyReleaseTextField.text == finalCode{
+             //   resetMayday()
+                print(finalCode)
+            }
         }
+    }
+    
+    func resetMayday(){
+        maydayButtonLabel.isHidden=false
+        countDownLabel.isHidden=true
+        cancelButtonLabel.isHidden=true
+        safetyReleaseTextField.isHidden=true
+        isPressed = false
+        setUpImageView()
     }
     
     func endTimer() {
