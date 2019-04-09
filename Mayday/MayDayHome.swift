@@ -8,6 +8,8 @@
 
 import UIKit
 import Alamofire
+import MapKit
+import CoreLocation
 class MayDayHome: UIViewController {
     
     //Outlet to hide and unhide the cancel button
@@ -26,6 +28,8 @@ class MayDayHome: UIViewController {
     //BG Variables
     let imageView = UIImageView()
     var horizontalConstraintMove : NSLayoutConstraint?
+    
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -131,7 +135,29 @@ class MayDayHome: UIViewController {
     }
     
     //retrieves location
+    
+    
 
+    //Checks to see location permission and starts tracking
+    func startReceivingLocationChanges() {
+        let authorizationStatus = CLLocationManager.authorizationStatus()
+        if authorizationStatus != .authorizedWhenInUse && authorizationStatus != .authorizedAlways {
+            // User has not authorized access to location information.
+            return
+        }
+        // Do not start services that aren't available.
+        if !CLLocationManager.locationServicesEnabled() {
+            // Location services is not available.
+            return
+        }
+        // Configure and start the service.
+        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        locationManager.distanceFilter = 100.0  // In meters.
+        locationManager.delegate = self as! CLLocationManagerDelegate
+        locationManager.startUpdatingLocation()
+        //        print(locationManager.location?.coordinate.latitude)
+        //        print(locationManager.location?.coordinate.longitude)
+    }
     
     
     //Sends text currently practice
