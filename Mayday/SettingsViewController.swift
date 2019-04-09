@@ -11,25 +11,14 @@ import FirebaseAuth
 import FirebaseStorage
 import FirebaseDatabase
 
-class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
     
     var imagePicker : UIImagePickerController?
     
     @IBOutlet weak var name: UITextField!
-    @IBOutlet weak var profileImage: UIButton!
     
-//    @IBAction func profilePic(_ sender: Any) {
-//        let image = UIImagePickerController()
-//        image.delegate=self
-//        image.sourceType = UIImagePickerController.SourceType.camera
-//        image.allowsEditing = false
-//        self.present(image, animated: true){
-//            //After it is complete
-//        }
-//        profileImage.setImage(image, for: <#T##UIControl.State#>)
-//    }
     @IBOutlet var EmergencyContactsTextFields: [UITextField]!
     
     @IBOutlet var PhoneNumbersTextFields: [UITextField]!
@@ -39,8 +28,6 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
     @IBOutlet weak var safetyReleaseTextField: UITextField!
     
     @IBOutlet weak var saveButton: UIButton!
-
-    var codeText = ""
     
     var information: Settings?
     
@@ -70,9 +57,10 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
             }
         })
         
-        print("is sharing")
-        self.codeText = safetyReleaseTextField.text ?? ""
-        performSegue(withIdentifier: "settingsToMayday", sender: self)
+//        print("is sharing")
+//        self.codeText = safetyReleaseTextField.text ?? ""
+//        performSegue(withIdentifier: "settingsToMayday", sender: self)
+//
         
     }
     
@@ -129,16 +117,16 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
         information = Settings()
         information?.getUserInfo({ (userName, contact1, contact2, contact3, alarm, phone1, phone2, phone3, safetyCode) in
             if let info = self.information{
-            self.name.text = info.nameRef
-            self.EmergencyContactsTextFields[0].text = info.contact1Ref
-            self.EmergencyContactsTextFields[1].text = info.contact2Ref
-            self.EmergencyContactsTextFields[2].text = info.contact3Ref
-            self.PhoneNumbersTextFields[0].text = info.phone1Ref
-            self.PhoneNumbersTextFields[1].text = info.phone2Ref
-            self.PhoneNumbersTextFields[2].text = info.phone3Ref
-            self.alarmTextField.text = info.alarmRef
-            self.safetyReleaseTextField.text = info.safetyCodeRef
-            self.reloadInputViews()
+                self.name.text = info.nameRef
+                self.EmergencyContactsTextFields[0].text = info.contact1Ref
+                self.EmergencyContactsTextFields[1].text = info.contact2Ref
+                self.EmergencyContactsTextFields[2].text = info.contact3Ref
+                self.PhoneNumbersTextFields[0].text = info.phone1Ref
+                self.PhoneNumbersTextFields[1].text = info.phone2Ref
+                self.PhoneNumbersTextFields[2].text = info.phone3Ref
+                self.alarmTextField.text = info.alarmRef
+                self.safetyReleaseTextField.text = info.safetyCodeRef
+                self.reloadInputViews()
             }
         })
         
@@ -254,11 +242,11 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
 //        performSegue(withIdentifier: "settingsToMayday", sender: self)
 //    }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("is preparing")
-        var vc = segue.destination as? MayDayHome
-        vc?.finalCode = self.codeText
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        print("is preparing")
+//        var vc = segue.destination as? MayDayHome
+//        vc?.finalCode = self.codeText
+//    }
     
 }
 

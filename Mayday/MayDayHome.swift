@@ -20,8 +20,11 @@ class MayDayHome: UIViewController {
     var seconds = 5
     var timer = Timer()
     var isTimerRunning = false
+
     
-    var finalCode = ""
+    var userInfo: Settings?
+    
+    var safetyReleaseCode = ""
     
     //tells if button has been pressed in order to determine which background to use
     var isPressed = false
@@ -40,9 +43,19 @@ class MayDayHome: UIViewController {
         cancelButtonLabel.isHidden=true
         safetyReleaseTextField.isHidden=true
         setUpImageView()
-        print(finalCode + ">>>>")
-        print("didload")
+        
+        userInfo = Settings()
+        userInfo?.getUserInfo({ (userName, contact1, contact2, contact3, alarm, phone1, phone2, phone3, safetyCode) in
+            if let info = self.userInfo{
+                if let code = info.safetyCodeRef{
+                    self.safetyReleaseCode = code
+                    print(self.safetyReleaseCode)
+                }
+            }
+        })
+        
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         animateBackgroundColor()
@@ -76,10 +89,11 @@ class MayDayHome: UIViewController {
             isPressed = false
             endTimer()
             // If safety release text equals the safety release code from settings page, reset Mayday
-            print(finalCode)
-            if safetyReleaseTextField.text == finalCode{
-             //   resetMayday()
-                print(finalCode)
+            
+            print(safetyReleaseCode)
+            if safetyReleaseTextField.text == safetyReleaseCode{
+                resetMayday()
+                
             }
         }
     }
