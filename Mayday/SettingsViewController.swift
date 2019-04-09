@@ -98,9 +98,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
     }
     
     
-    @IBAction func ChangePhotoTouchedUp(_ sender: UIButton) {
-        self.present(imagePicker!, animated: true, completion: nil)
-    }
+   
     
     func getUserInfo(_ completion: @escaping((_ name:String?, _ contact1: String?, _ contact2: String?, _ contact3: String?, _ alarm: String?, _ phone1: String?, _ phone2: String?, _ phone3: String?, _ presafetyCode: String?)  -> ())){
         guard let uid = Auth.auth().currentUser?.uid else {return}
