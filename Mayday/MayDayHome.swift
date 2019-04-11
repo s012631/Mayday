@@ -16,7 +16,9 @@ class MayDayHome: UIViewController {
     @IBOutlet weak var maydayButtonLabel: UIButton!
     @IBOutlet weak var countDownLabel: UILabel!
     @IBOutlet weak var settingsButtonOutlet: UIButton!
+ 
     @IBOutlet weak var safetyReleaseTextField: UITextField!
+    
     var seconds = 5
     var timer = Timer()
     var isTimerRunning = false
@@ -25,6 +27,7 @@ class MayDayHome: UIViewController {
     var userInfo: Settings?
     
     var safetyReleaseCode = ""
+    
     
     //tells if button has been pressed in order to determine which background to use
     var isPressed = false
