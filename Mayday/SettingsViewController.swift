@@ -109,9 +109,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
     }
     
     
-    @IBAction func ChangePhotoTouchedUp(_ sender: UIButton) {
-        self.present(imagePicker!, animated: true, completion: nil)
-    }
+   
     
     func setUserInfo(){
         information = Settings()
