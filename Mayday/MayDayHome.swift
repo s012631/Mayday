@@ -25,6 +25,10 @@ class MayDayHome: UIViewController {
     var userInfo: Settings?
     
     var safetyReleaseCode = ""
+    var username = ""
+    var number1 = ""
+    var number2 = ""
+    var number3 = ""
     
     //tells if button has been pressed in order to determine which background to use
     var isPressed = false
@@ -37,7 +41,7 @@ class MayDayHome: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sendSMS()
+     
         maydayButtonLabel.isHidden=false
         countDownLabel.isHidden=true
         cancelButtonLabel.isHidden=true
@@ -47,13 +51,27 @@ class MayDayHome: UIViewController {
         userInfo = Settings()
         userInfo?.getUserInfo({ (userName, contact1, contact2, contact3, alarm, phone1, phone2, phone3, safetyCode) in
             if let info = self.userInfo{
+                print("Info gathering method*****************")
                 if let code = info.safetyCodeRef{
                     self.safetyReleaseCode = code
                     print(self.safetyReleaseCode)
                 }
+                if let name = info.nameRef{
+                    self.username = name
+                    print(self.username)
+                }
+                if let number1 = info.phone1Ref{
+                    self.safetyReleaseCode = number1
+                    print(self.number1)
+                }
+                if let number2 = info.phone1Ref{
+                    self.safetyReleaseCode = number1
+                    print(self.number1)
+                }
+                
             }
         })
-        
+        sendSMS()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -174,7 +192,7 @@ class MayDayHome: UIViewController {
         let accountSID = "ACc3a05fd5f0c779f27346d34b22e4a730"
         let authToken = "06347b68f614f8f0540db1a9e1793b0c"
         let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
-        let parameters = ["From": "+12673607440", "To": info.phone1Ref, "Body": "Mayday: Your code actually worked!"]
+        let parameters = ["From": "+12673607440", "To": number1, "Body": "Mayday: Your code actually worked!"]
         print("sms processsssssssssssssssss")
         print(info.phone1Ref)
         Alamofire.request(url, method: .post, parameters: parameters)
