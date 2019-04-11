@@ -91,6 +91,7 @@ class MayDayHome: UIViewController {
             print(safetyReleaseCode)
             if safetyReleaseTextField.text == safetyReleaseCode{
                 resetMayday()
+          //      viewDidLoad()
                 
             }
         }
@@ -101,7 +102,7 @@ class MayDayHome: UIViewController {
         countDownLabel.isHidden=true
         cancelButtonLabel.isHidden=true
         safetyReleaseTextField.isHidden=true
-        isPressed = false
+        settingsButtonOutlet.isHidden=false
         setUpImageView()
     }
     
