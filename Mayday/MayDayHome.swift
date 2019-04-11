@@ -45,7 +45,7 @@ class MayDayHome: UIViewController {
         maydayButtonLabel.isHidden=false
         countDownLabel.isHidden=true
         cancelButtonLabel.isHidden=true
-        safetyReleaseTextField.isHidden=true
+//        safetyReleaseTextField.isHidden=true
         setUpImageView()
         
         userInfo = Settings()
@@ -54,24 +54,27 @@ class MayDayHome: UIViewController {
                 print("Info gathering method*****************")
                 if let code = info.safetyCodeRef{
                     self.safetyReleaseCode = code
-                    print(self.safetyReleaseCode)
+                    print(code)
                 }
                 if let name = info.nameRef{
                     self.username = name
                     print(self.username)
                 }
                 if let number1 = info.phone1Ref{
-                    self.safetyReleaseCode = number1
+                    self.number1 = number1
                     print(self.number1)
                 }
-                if let number2 = info.phone1Ref{
-                    self.safetyReleaseCode = number1
-                    print(self.number1)
+                if let number2 = info.phone2Ref{
+                    self.number2 = number2
+                    print(self.number2)
+                }
+                if let number3 = info.phone3Ref{
+                    self.number3 = number3
+                    print(self.number3)
                 }
                 
             }
         })
-        sendSMS()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -102,17 +105,20 @@ class MayDayHome: UIViewController {
             countDownLabel.isHidden=true
             cancelButtonLabel.isHidden=true
             settingsButtonOutlet.isHidden=true
-            safetyReleaseTextField.isHidden=false
-            safetyReleaseTextField.keyboardType = UIKeyboardType.numberPad
+//            safetyReleaseTextField.isHidden=false
+//            safetyReleaseTextField.keyboardType = UIKeyboardType.numberPad
             isPressed = false
             endTimer()
+            sendSMS1()
+            sendSMS2()
+            sendSMS3()
             // If safety release text equals the safety release code from settings page, reset Mayday
             
             print(safetyReleaseCode)
-            if safetyReleaseTextField.text == safetyReleaseCode{
-                resetMayday()
-                
-            }
+//            if safetyReleaseTextField.text == safetyReleaseCode{
+//                resetMayday()
+//
+//            }
         }
     }
     
@@ -188,13 +194,39 @@ class MayDayHome: UIViewController {
     
     //Sends text currently practice
     //How i did it: https://www.twilio.com/blog/2018/03/sending-text-messages-in-swift-with-twilio.html
-    func sendSMS(){
+    func sendSMS1(){
         let accountSID = "ACc3a05fd5f0c779f27346d34b22e4a730"
         let authToken = "06347b68f614f8f0540db1a9e1793b0c"
         let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
         let parameters = ["From": "+12673607440", "To": number1, "Body": "Mayday: Your code actually worked!"]
         print("sms processsssssssssssssssss")
-        print(info.phone1Ref)
+        print(number1)
+        Alamofire.request(url, method: .post, parameters: parameters)
+            .authenticate(user: accountSID, password: authToken)
+            .responseJSON { response in
+                debugPrint(response)
+        }
+    }
+    func sendSMS2(){
+        let accountSID = "ACc3a05fd5f0c779f27346d34b22e4a730"
+        let authToken = "06347b68f614f8f0540db1a9e1793b0c"
+        let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
+        let parameters = ["From": "+12673607440", "To": number2, "Body": "Mayday: Your code actually worked!"]
+        print("sms processsssssssssssssssss")
+        print(number1)
+        Alamofire.request(url, method: .post, parameters: parameters)
+            .authenticate(user: accountSID, password: authToken)
+            .responseJSON { response in
+                debugPrint(response)
+        }
+    }
+    func sendSMS3(){
+        let accountSID = "ACc3a05fd5f0c779f27346d34b22e4a730"
+        let authToken = "06347b68f614f8f0540db1a9e1793b0c"
+        let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
+        let parameters = ["From": "+12673607440", "To": number3, "Body": "Mayday: Your code actually worked!"]
+        print("sms processsssssssssssssssss")
+        print(number1)
         Alamofire.request(url, method: .post, parameters: parameters)
             .authenticate(user: accountSID, password: authToken)
             .responseJSON { response in
