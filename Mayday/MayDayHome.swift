@@ -91,15 +91,23 @@ class MayDayHome: UIViewController {
             endTimer()
             // If safety release text equals the safety release code from settings page, reset Mayday
             
-            print(safetyReleaseCode)
-            if safetyReleaseTextField.text == safetyReleaseCode{
-                resetMayday()
+           safetyReleaseTextField.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
+                
+//            if safetyReleaseTextField.text == safetyReleaseCode{
+//                resetMayday()
           //      viewDidLoad()
                 
-            }
+        //    }
         }
     }
-    
+
+    @objc func textFieldDidChange(textField: UITextField){
+        if safetyReleaseTextField.text == safetyReleaseCode{
+            resetMayday()
+            print("Text is equal")
+        }
+    }
+
     func resetMayday(){
         maydayButtonLabel.isHidden=false
         countDownLabel.isHidden=true
