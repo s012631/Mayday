@@ -40,6 +40,18 @@ class MayDayHome: UIViewController {
         setUpImageView()
         
         print("didload")
+        
+        
+        //location
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestAlwaysAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled(){
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.startUpdatingLocation()
+        }
+            
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -135,29 +147,33 @@ class MayDayHome: UIViewController {
     }
     
     //retrieves location
-    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+            if let location = locations.first{
+                print(location.coordinate)
+        }
+    }
     
 
     //Checks to see location permission and starts tracking
-    func startReceivingLocationChanges() {
-        let authorizationStatus = CLLocationManager.authorizationStatus()
-        if authorizationStatus != .authorizedWhenInUse && authorizationStatus != .authorizedAlways {
-            // User has not authorized access to location information.
-            return
-        }
-        // Do not start services that aren't available.
-        if !CLLocationManager.locationServicesEnabled() {
-            // Location services is not available.
-            return
-        }
-        // Configure and start the service.
-        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
-        locationManager.distanceFilter = 100.0  // In meters.
-        locationManager.delegate = self as! CLLocationManagerDelegate
-        locationManager.startUpdatingLocation()
-        //        print(locationManager.location?.coordinate.latitude)
-        //        print(locationManager.location?.coordinate.longitude)
-    }
+//    func startReceivingLocationChanges() {
+//        let authorizationStatus = CLLocationManager.authorizationStatus()
+//        if authorizationStatus != .authorizedWhenInUse && authorizationStatus != .authorizedAlways {
+//            // User has not authorized access to location information.
+//            return
+//        }
+//        // Do not start services that aren't available.
+//        if !CLLocationManager.locationServicesEnabled() {
+//            // Location services is not available.
+//            return
+//        }
+//        // Configure and start the service.
+//        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+//        locationManager.distanceFilter = 100.0  // In meters.
+//        locationManager.delegate = self as! CLLocationManagerDelegate
+//        locationManager.startUpdatingLocation()
+//        //        print(locationManager.location?.coordinate.latitude)
+//        //        print(locationManager.location?.coordinate.longitude)
+//    }
     
     
     //Sends text currently practice
