@@ -140,14 +140,6 @@ class MayDayHome: UIViewController {
         cancelButtonLabel.isHidden=true
         safetyReleaseTextField.isHidden=true
         settingsButtonOutlet.isHidden=false
-        setUpImageView()
-    }
-    
-    func resetMayday(){
-        maydayButtonLabel.isHidden=false
-        countDownLabel.isHidden=true
-        cancelButtonLabel.isHidden=true
-        safetyReleaseTextField.isHidden=true
         isPressed = false
         setUpImageView()
     }
