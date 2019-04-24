@@ -29,6 +29,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
     
     @IBOutlet weak var saveButton: UIButton!
     
+    var information: Settings?
     
  // link to how to use firebase   https://firebase.google.com/docs/database/ios/read-and-write
     @IBAction func saveButtonTouchedUp(_ sender: UIButton) {
@@ -56,7 +57,17 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
             }
         })
         
+//        print("is sharing")
+//        self.codeText = safetyReleaseTextField.text ?? ""
+//        performSegue(withIdentifier: "settingsToMayday", sender: self)
+//
+        
     }
+    
+    @IBAction func backButtonTouchedUp(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "settingsToMayday", sender: self)
+    }
+    
     
 
     @IBAction func logoutButtonTouchedUp(_ sender: UIButton){
@@ -98,98 +109,112 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
     }
     
     
-    @IBAction func ChangePhotoTouchedUp(_ sender: UIButton) {
-        self.present(imagePicker!, animated: true, completion: nil)
+   
+    
+    func setUserInfo(){
+        information = Settings()
+        information?.getUserInfo({ (userName, contact1, contact2, contact3, alarm, phone1, phone2, phone3, safetyCode) in
+            if let info = self.information{
+                self.name.text = info.nameRef
+                self.EmergencyContactsTextFields[0].text = info.contact1Ref
+                self.EmergencyContactsTextFields[1].text = info.contact2Ref
+                self.EmergencyContactsTextFields[2].text = info.contact3Ref
+                self.PhoneNumbersTextFields[0].text = info.phone1Ref
+                self.PhoneNumbersTextFields[1].text = info.phone2Ref
+                self.PhoneNumbersTextFields[2].text = info.phone3Ref
+                self.alarmTextField.text = info.alarmRef
+                self.safetyReleaseTextField.text = info.safetyCodeRef
+                self.reloadInputViews()
+            }
+        })
+        
+//        if let info = information{
+//            print("is assigning")
+//            self.name.text = info.nameRef
+//            print(info.nameRef)
+//            self.EmergencyContactsTextFields[0].text = info.contact1Ref
+//            self.EmergencyContactsTextFields[1].text = info.contact2Ref
+//            self.EmergencyContactsTextFields[2].text = info.contact3Ref
+//            self.PhoneNumbersTextFields[0].text = info.phone1Ref
+//            self.PhoneNumbersTextFields[1].text = info.phone2Ref
+//            self.PhoneNumbersTextFields[2].text = info.phone3Ref
+//            self.alarmTextField.text = info.alarmRef
+//            self.safetyReleaseTextField.text = info.safetyCodeRef
+//            self.reloadInputViews()
+//        }
     }
     
-    func getUserInfo(_ completion: @escaping((_ name:String?, _ contact1: String?, _ contact2: String?, _ contact3: String?, _ alarm: String?, _ phone1: String?, _ phone2: String?, _ phone3: String?, _ presafetyCode: String?)  -> ())){
-        guard let uid = Auth.auth().currentUser?.uid else {return}
-        let databaseRef = Database.database().reference().child("user/\(uid)")
-        
-        var userName: String?
-        var contact1: String?
-        var contact2: String?
-        var contact3: String?
-        var alarm: String?
-        var phone1: String?
-        var phone2: String?
-        var phone3: String?
-        var safetyCode: String?
-        
-        databaseRef.observeSingleEvent(of: .value, with: { snapshot  in
-            let dictionary = snapshot.value as? [String : AnyObject] ?? [:]
-    
-//            if let userName = dictionary["Name"] {
-//                completion(userName as? String)
+//    func getUserInfo(_ completion: @escaping((_ name:String?, _ contact1: String?, _ contact2: String?, _ contact3: String?, _ alarm: String?, _ phone1: String?, _ phone2: String?, _ phone3: String?, _ safetyCode: String?)  -> ())){
+//        guard let uid = Auth.auth().currentUser?.uid else {return}
+//        let databaseRef = Database.database().reference().child("user/\(uid)")
+//
+//        var userName: String?
+//        var contact1: String?
+//        var contact2: String?
+//        var contact3: String?
+//        var alarm: String?
+//        var phone1: String?
+//        var phone2: String?
+//        var phone3: String?
+//        var safetyCode: String?
+//
+//        databaseRef.observeSingleEvent(of: .value, with: { snapshot  in
+//            let dictionary = snapshot.value as? [String : AnyObject] ?? [:]
+//
+//            if let name = dictionary["Name"] {
+//                userName = name as? String
 //            }
-            if let name = dictionary["Name"] {
-                userName = name as? String
-            }
-            if let eContact1 = dictionary["EmergencyContact1"]{
-                contact1 = eContact1 as? String
-            }
-            if let eContact2 = dictionary["EmergencyContact2"]{
-                contact2 = eContact2 as? String
-            }
-            if let eContact3 = dictionary["EmergencyContact3"]{
-                contact3 = eContact3 as? String
-            }
-            if let alarmCompany = dictionary["Alarm"]{
-                alarm = alarmCompany as? String
-            }
-            if let firstPhone = dictionary["Phone1"]{
-                phone1 = firstPhone as? String
-            }
-            if let secondPhone = dictionary["Phone2"]{
-                phone2 = secondPhone as? String
-            }
-            if let thirdPhone = dictionary["Phone3"]{
-                phone3 = thirdPhone as? String
-            }
-            if let safeCode = dictionary["Code"]{
-                safetyCode = safetyCode as? String
-            }
-            
-            completion(userName, contact1, contact2, contact3, alarm, phone1, phone2, phone3, safetyCode)
-            
-        }) { (error) in
-            print(error.localizedDescription)
-        }
-    }
+//            if let eContact1 = dictionary["EmergencyContact1"]{
+//                contact1 = eContact1 as? String
+//            }
+//            if let eContact2 = dictionary["EmergencyContact2"]{
+//                contact2 = eContact2 as? String
+//            }
+//            if let eContact3 = dictionary["EmergencyContact3"]{
+//                contact3 = eContact3 as? String
+//            }
+//            if let alarmCompany = dictionary["Alarm"]{
+//                alarm = alarmCompany as? String
+//            }
+//            if let firstPhone = dictionary["Phone1"]{
+//                phone1 = firstPhone as? String
+//            }
+//            if let secondPhone = dictionary["Phone2"]{
+//                phone2 = secondPhone as? String
+//            }
+//            if let thirdPhone = dictionary["Phone3"]{
+//                phone3 = thirdPhone as? String
+//            }
+//            if let safeCode = dictionary["Code"]{
+//                safetyCode = safeCode as? String
+//            }
+//
+//            completion(userName, contact1, contact2, contact3, alarm, phone1, phone2, phone3, safetyCode)
+//
+//        }) { (error) in
+//            print(error.localizedDescription)
+//        }
+//    }
     
     
     override func viewDidLoad() {
       super.viewDidLoad()
-       
-//        guard let uid = Auth.auth().currentUser?.uid else {return}
-//        let databaseRef = Database.database().reference().child("user/\(uid)")
-//        var userName : String?
-//
-////        databaseRef.observe(.childAdded, with: { (snapshot) in
-////            // This if statement is not executing
-////            if let dictionary = snapshot.value as? [String : AnyObject] {
-//        databaseRef.observeSingleEvent(of: .value, with: { snapshot  in
-//            let dictionary = snapshot.value as? [String : AnyObject] ?? [:]
-//                print("ran")
-//               // userName = dictionary["Name"] as? String
-//                if let
-//                print(userName)
-//
-//            }
-//        })
+  
+        setUserInfo()
+        print("is setting user info")
         
-//        getUserInfo() { userName in
-        getUserInfo() { userName, contact1, contact2, contact3, alarm, phone1, phone2, phone3, safetyCode in
-            self.name.text = userName
-            self.EmergencyContactsTextFields[0].text = contact1
-            self.EmergencyContactsTextFields[1].text = contact2
-            self.EmergencyContactsTextFields[2].text = contact3
-            self.PhoneNumbersTextFields[0].text = phone1
-            self.PhoneNumbersTextFields[1].text = phone2
-            self.PhoneNumbersTextFields[2].text = phone3
-            self.alarmTextField.text = alarm
-            self.reloadInputViews()
-        }
+//        getUserInfo() { userName, contact1, contact2, contact3, alarm, phone1, phone2, phone3, safetyCode in
+//            self.name.text = userName
+//            self.EmergencyContactsTextFields[0].text = contact1
+//            self.EmergencyContactsTextFields[1].text = contact2
+//            self.EmergencyContactsTextFields[2].text = contact3
+//            self.PhoneNumbersTextFields[0].text = phone1
+//            self.PhoneNumbersTextFields[1].text = phone2
+//            self.PhoneNumbersTextFields[2].text = phone3
+//            self.alarmTextField.text = alarm
+//            self.safetyReleaseTextField.text = safetyCode
+//            self.reloadInputViews()
+//        }
         
         
         name.delegate = self
@@ -204,9 +229,22 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
         safetyReleaseTextField.isSecureTextEntry = true
         name.becomeFirstResponder()
     
+     //   shareInfo()
+        
     }
     
-        
-        
+    
+//    func shareInfo(){
+//        print("is sharing")
+//        self.codeText = safetyReleaseTextField.text ?? ""
+//        performSegue(withIdentifier: "settingsToMayday", sender: self)
+//    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        print("is preparing")
+//        var vc = segue.destination as? MayDayHome
+//        vc?.finalCode = self.codeText
+//    }
+    
 }
 
