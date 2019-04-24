@@ -18,5 +18,15 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>NSLocationWhenInUseUsageDescription” keys</key>
+	<string>Whats your location</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription”</key>
+	<string>Whats your location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Whats your location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Whats your location</string>
 </dict>
 </plist>
