@@ -81,16 +81,16 @@ class MayDayHome: UIViewController {
         print("didload")
         
         
-        //location
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.requestAlwaysAuthorization()
-        
-        if CLLocationManager.locationServicesEnabled(){
-            locationManager.delegate = self as? CLLocationManagerDelegate
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager.startUpdatingLocation()
-        }
-            
+//        //location
+//        locationManager.requestWhenInUseAuthorization()
+//        locationManager.requestAlwaysAuthorization()
+//
+//        if CLLocationManager.locationServicesEnabled(){
+//            locationManager.delegate = self as? CLLocationManagerDelegate
+//            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+//            locationManager.startUpdatingLocation()
+//        }
+//
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -207,12 +207,12 @@ class MayDayHome: UIViewController {
         })
     }
     
-    //retrieves location
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-            if let location = locations.first{
-                print(location.coordinate)
-        }
-    }
+//    //retrieves location
+//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//            if let location = locations.first{
+//                print(location.coordinate)
+//        }
+//    }
     
 
     //Checks to see location permission and starts tracking
