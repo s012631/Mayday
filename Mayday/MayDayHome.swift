@@ -86,7 +86,7 @@ class MayDayHome: UIViewController {
     }
     
     @IBAction func MayDayButton(_ sender: UIButton) {
-        if(isPressed == false)
+        if(isPressed == false){
         isPressed = true
         //swap visible labels
         maydayButtonLabel.isHidden=true
