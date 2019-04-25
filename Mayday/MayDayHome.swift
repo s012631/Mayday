@@ -86,6 +86,7 @@ class MayDayHome: UIViewController {
     }
     
     @IBAction func MayDayButton(_ sender: UIButton) {
+        if(isPressed == false)
         isPressed = true
         //swap visible labels
         maydayButtonLabel.isHidden=true
@@ -93,6 +94,7 @@ class MayDayHome: UIViewController {
         cancelButtonLabel.isHidden=false
         //Begin Timer
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+        }
     }
     
     
@@ -110,7 +112,6 @@ class MayDayHome: UIViewController {
             settingsButtonOutlet.isHidden=true
             safetyReleaseTextField.isHidden=false
             safetyReleaseTextField.keyboardType = UIKeyboardType.numberPad
-            isPressed = false
             endTimer()
             sendSMS1()
             sendSMS2()
