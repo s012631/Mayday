@@ -168,7 +168,7 @@
                                     <constraint firstAttribute="height" constant="30" id="ODv-2A-KOj"/>
                                     <constraint firstAttribute="width" constant="300" id="PoG-1a-Hiq"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -185,7 +185,7 @@
                                     <constraint firstAttribute="width" constant="300" id="B1X-8s-dci"/>
                                     <constraint firstAttribute="height" constant="30" id="v1x-4V-KNz"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" textContentType="password"/>
                             </textField>
@@ -202,7 +202,7 @@
                                     <constraint firstAttribute="width" constant="300" id="BET-pc-T4A"/>
                                     <constraint firstAttribute="height" constant="30" id="i7o-hM-kGo"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" textContentType="password"/>
                             </textField>
