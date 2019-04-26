@@ -28,6 +28,9 @@ class MayDayHome: UIViewController {
     
     var safetyReleaseCode = ""
     var username = ""
+    var name1 = ""
+    var name2 = ""
+    var name3 = ""
     var number1 = ""
     var number2 = ""
     var number3 = ""
@@ -62,6 +65,18 @@ class MayDayHome: UIViewController {
                     self.username = name
                     print(self.username)
                 }
+                if let name1 = info.contact1Ref{
+                    self.name1 = name1
+                    print(self.name1)
+                }
+                if let name2 = info.contact2Ref{
+                    self.name2 = name2
+                    print(self.name2)
+                }
+                if let name3 = info.contact3Ref{
+                    self.name3 = name3
+                    print(self.name3)
+                }
                 if let number1 = info.phone1Ref{
                     self.number1 = number1
                     print(self.number1)
@@ -74,7 +89,6 @@ class MayDayHome: UIViewController {
                     self.number3 = number3
                     print(self.number3)
                 }
-                
             }
         })
         
@@ -86,7 +100,7 @@ class MayDayHome: UIViewController {
     }
     
     @IBAction func MayDayButton(_ sender: UIButton) {
-        if(isPressed == false)
+        if(isPressed == false){
         isPressed = true
         //swap visible labels
         maydayButtonLabel.isHidden=true
@@ -206,50 +220,50 @@ class MayDayHome: UIViewController {
     }
     
     
-    //Sends text currently practice
-    //How i did it: https://www.twilio.com/blog/2018/03/sending-text-messages-in-swift-with-twilio.html
-    func sendSMS1(){
-        let accountSID = "ACc3a05fd5f0c779f27346d34b22e4a730"
-        let authToken = "06347b68f614f8f0540db1a9e1793b0c"
-        let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
-        let parameters = ["From": "+12673607440", "To": number1, "Body": "Mayday: Your code actually worked!"]
-        print("sms processsssssssssssssssss")
-        print(number1)
-        Alamofire.request(url, method: .post, parameters: parameters)
-            .authenticate(user: accountSID, password: authToken)
-            .responseJSON { response in
-                debugPrint(response)
-        }
+//Sends text currently practice
+//How i did it: https://www.twilio.com/blog/2018/03/sending-text-messages-in-swift-with-twilio.html
+//VVC9Fq6VK0zNesttfIKzl7iPzDqs3//ziiVNVswx
+func sendSMS1(){
+    let accountSID = "ACc3a05fd5f0c779f27346d34b22e4a730"
+    let authToken = "06347b68f614f8f0540db1a9e1793b0c"
+    let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
+    let parameters = ["From": "+12673607440", "To": number1, "Body": "Mayday: \(name1), your friend \(username) is in danger! click the link to see where they are:"]
+    print("sms processsssssssssssssssss")
+    print(number1)
+    Alamofire.request(url, method: .post, parameters: parameters)
+        .authenticate(user: accountSID, password: authToken)
+        .responseJSON { response in
+            debugPrint(response)
     }
-    func sendSMS2(){
-        let accountSID = "ACc3a05fd5f0c779f27346d34b22e4a730"
-        let authToken = "06347b68f614f8f0540db1a9e1793b0c"
-        let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
-        let parameters = ["From": "+12673607440", "To": number2, "Body": "Mayday: Your code actually worked!"]
-        print("sms processsssssssssssssssss")
-        print(number1)
-        Alamofire.request(url, method: .post, parameters: parameters)
-            .authenticate(user: accountSID, password: authToken)
-            .responseJSON { response in
-                debugPrint(response)
-        }
+}
+func sendSMS2(){
+    let accountSID = "ACc3a05fd5f0c779f27346d34b22e4a730"
+    let authToken = "06347b68f614f8f0540db1a9e1793b0c"
+    let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
+    let parameters = ["From": "+12673607440", "To": number2, "Body": "Mayday: \(name2), your friend \(username) is in danger! click the link to see where they are:"]
+    print("sms processsssssssssssssssss")
+    print(number1)
+    Alamofire.request(url, method: .post, parameters: parameters)
+        .authenticate(user: accountSID, password: authToken)
+        .responseJSON { response in
+            debugPrint(response)
     }
-    func sendSMS3(){
-        let accountSID = "ACc3a05fd5f0c779f27346d34b22e4a730"
-        let authToken = "06347b68f614f8f0540db1a9e1793b0c"
-        let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
-        let parameters = ["From": "+12673607440", "To": number3, "Body": "Mayday: Your code actually worked!"]
-        print("sms processsssssssssssssssss")
-        print(number1)
-        Alamofire.request(url, method: .post, parameters: parameters)
-            .authenticate(user: accountSID, password: authToken)
-            .responseJSON { response in
-                debugPrint(response)
-        }
+}
+func sendSMS3(){
+    let accountSID = "ACc3a05fd5f0c779f27346d34b22e4a730"
+    let authToken = "06347b68f614f8f0540db1a9e1793b0c"
+    let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
+    let parameters = ["From": "+12673607440", "To": number3, "Body": "Mayday: \(name3), your friend \(username) is in danger! click the link to see where they are:"]
+    print("sms processsssssssssssssssss")
+    print(number1)
+    Alamofire.request(url, method: .post, parameters: parameters)
+        .authenticate(user: accountSID, password: authToken)
+        .responseJSON { response in
+            debugPrint(response)
     }
-    
 }
 
+}
 
 
 
