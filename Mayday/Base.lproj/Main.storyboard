@@ -384,6 +384,7 @@
                         <outlet property="cancelButtonLabel" destination="AnV-RY-E12" id="qdj-Hv-ZbV"/>
                         <outlet property="countDownLabel" destination="Eks-GR-oWx" id="us7-0o-UDD"/>
                         <outlet property="maydayButtonLabel" destination="lUF-NC-C3i" id="s83-8Y-icq"/>
+                        <outlet property="safetyReleaseTextField" destination="5wA-Rf-2Wq" id="9Av-8P-e5g"/>
                         <outlet property="settingsButtonOutlet" destination="lET-qb-Xf8" id="Zqg-MK-tMR"/>
                     </connections>
                 </viewController>
