@@ -310,20 +310,6 @@
                                     <action selector="MayDayButton:" destination="wv1-7N-CF6" eventType="touchUpInside" id="JoL-CW-mqF"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="vpk-uC-s6N">
-                                <rect key="frame" x="10" y="10" width="300" height="1"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="9Kb-sC-giD"/>
-                                    <constraint firstAttribute="width" constant="300" id="peS-4P-jPQ"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="R2H-JU-JtX">
-                                <rect key="frame" x="10" y="10" width="300" height="1"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="3IU-wE-Jne"/>
-                                    <constraint firstAttribute="width" constant="300" id="PJo-Gl-4ux"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lET-qb-Xf8">
                                 <rect key="frame" x="315" y="44" width="50" height="50"/>
                                 <constraints>
