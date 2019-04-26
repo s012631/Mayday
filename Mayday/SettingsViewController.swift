@@ -29,6 +29,8 @@ class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePick
     
     @IBOutlet weak var saveButton: UIButton!
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     var information: Settings?
     
  // link to how to use firebase   https://firebase.google.com/docs/database/ios/read-and-write

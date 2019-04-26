@@ -22,6 +22,8 @@ class Settings{
     var phone2Ref: String?
     var phone3Ref: String?
     var safetyCodeRef: String?
+  
+    
     
     init(){
 //        getUserInfo() { userName, contact1, contact2, contact3, alarm, phone1, phone2, phone3, safetyCode in

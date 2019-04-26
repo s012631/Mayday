@@ -17,6 +17,7 @@ class MayDayHome: UIViewController {
     @IBOutlet weak var countDownLabel: UILabel!
     @IBOutlet weak var settingsButtonOutlet: UIButton!
  
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var safetyReleaseTextField: UITextField!
     
     var seconds = 5
