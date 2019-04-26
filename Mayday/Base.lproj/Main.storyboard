@@ -32,7 +32,10 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWw-Cx-fhO">
-                                <rect key="frame" x="36" y="408" width="84" height="34"/>
+                                <rect key="frame" x="36" y="408" width="97" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="sch-69-vkp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -96,33 +99,32 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MAYDAY NEW" translatesAutoresizingMaskIntoConstraints="NO" id="peG-7c-TWM">
-                                <rect key="frame" x="57" y="91" width="260" height="260"/>
+                                <rect key="frame" x="57" y="91" width="261" height="260"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="95O-bk-H8I"/>
                                     <constraint firstAttribute="height" constant="260" id="pw2-Ng-nuT"/>
-                                    <constraint firstAttribute="width" constant="260" id="tFT-I3-2nQ"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.011764705882352941" green="0.043137254901960784" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ckK-bp-azR" firstAttribute="leading" secondItem="5Hz-AD-eus" secondAttribute="trailing" constant="14" id="0rO-O6-oBf"/>
-                            <constraint firstItem="peG-7c-TWM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="41" id="1rV-qp-ERQ"/>
                             <constraint firstItem="uOL-Rv-2qk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="496" id="1zg-Nh-hzc"/>
                             <constraint firstItem="0dg-KU-2yj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="404" id="725-Qh-Zog"/>
-                            <constraint firstItem="peG-7c-TWM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="47" id="7R7-w3-ckJ"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="peG-7c-TWM" secondAttribute="bottom" constant="427" id="8Ng-NB-YUe"/>
+                            <constraint firstItem="peG-7c-TWM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="41" id="9iC-Oi-15b"/>
                             <constraint firstItem="Ert-SF-2gN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="525" id="Ace-fW-Die"/>
                             <constraint firstItem="5Hz-AD-eus" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="537" id="CVo-7B-vR0"/>
                             <constraint firstItem="UNj-bY-23C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="Tn2-k1-IfB"/>
                             <constraint firstItem="MBv-N1-CBg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vkq-aS-hSK"/>
                             <constraint firstItem="ckK-bp-azR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="537" id="Z3j-rR-5hh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="peG-7c-TWM" secondAttribute="trailing" constant="42" id="afJ-47-g8B"/>
                             <constraint firstItem="vWw-Cx-fhO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="bTe-tQ-p6c"/>
                             <constraint firstItem="vWw-Cx-fhO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="364" id="dCv-LC-pFQ"/>
                             <constraint firstItem="uOL-Rv-2qk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="geF-0y-Cai"/>
                             <constraint firstItem="UNj-bY-23C" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="456" id="gqT-JQ-Kqv"/>
                             <constraint firstItem="5Hz-AD-eus" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="hDp-PF-McB"/>
                             <constraint firstItem="zQP-yE-87d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="ieG-JC-7Yl"/>
+                            <constraint firstItem="peG-7c-TWM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="47" id="imB-mf-JNV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="peG-7c-TWM" secondAttribute="trailing" constant="41" id="mbI-F1-5IC"/>
                             <constraint firstItem="0dg-KU-2yj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="re9-ub-gwL"/>
                             <constraint firstItem="Ert-SF-2gN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="ryT-qY-2Ya"/>
                             <constraint firstItem="MBv-N1-CBg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="709.33000000000004" id="vIg-CD-7n3"/>
@@ -274,7 +276,7 @@
                         <outlet property="passwordConfirmationTextField" destination="oFA-Iu-S04" id="eGh-bY-1FB"/>
                         <outlet property="passwordTextField" destination="2xm-m7-5WE" id="5wO-pb-0lL"/>
                         <outlet property="signUpButton" destination="TMO-V0-9XL" id="HXf-EC-tPn"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="signUpToLogin" id="i61-tY-Vrq"/>
+                        <segue destination="wv1-7N-CF6" kind="show" identifier="signUpToHome" id="T93-7s-4Cm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IKp-ot-Q94" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -741,6 +743,6 @@
         <image name="line" width="626" height="2"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aEy-vQ-u7j"/>
+        <segue reference="T93-7s-4Cm"/>
     </inferredMetricsTieBreakers>
 </document>
