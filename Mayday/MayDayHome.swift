@@ -227,7 +227,7 @@ func sendSMS1(){
     let accountSID = "ACc3a05fd5f0c779f27346d34b22e4a730"
     let authToken = "06347b68f614f8f0540db1a9e1793b0c"
     let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
-    let parameters = ["From": "+12673607440", "To": number1, "Body": "Mayday: \(name1), your friend \(username) is in danger! click the link to see where they are:"]
+    let parameters = ["From": "+12673607440", "To": number1, "Body": "Mayday: \(name1), your friend \(username) is in danger! click the link to see where they are: https://www.google.com/maps/dir/40.010089,-75.2789172/301+E+Montgomery+Ave,+Ardmore,+PA+19003/@40.0106444,-75.282188,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x89c6c09c631f0b51:0x6a39636a31f22e56!2m2!1d-75.2803529!2d40.0098854!3e2"]
     print("sms processsssssssssssssssss")
     print(number1)
     Alamofire.request(url, method: .post, parameters: parameters)
@@ -240,7 +240,7 @@ func sendSMS2(){
     let accountSID = "ACc3a05fd5f0c779f27346d34b22e4a730"
     let authToken = "06347b68f614f8f0540db1a9e1793b0c"
     let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
-    let parameters = ["From": "+12673607440", "To": number2, "Body": "Mayday: \(name2), your friend \(username) is in danger! click the link to see where they are:"]
+    let parameters = ["From": "+12673607440", "To": number2, "Body": "Mayday: \(name2), your friend \(username) is in danger! click the link to see where they are: https://www.google.com/maps/dir/40.010089,-75.2789172/301+E+Montgomery+Ave,+Ardmore,+PA+19003/@40.0106444,-75.282188,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x89c6c09c631f0b51:0x6a39636a31f22e56!2m2!1d-75.2803529!2d40.0098854!3e2"]
     print("sms processsssssssssssssssss")
     print(number1)
     Alamofire.request(url, method: .post, parameters: parameters)
@@ -253,7 +253,7 @@ func sendSMS3(){
     let accountSID = "ACc3a05fd5f0c779f27346d34b22e4a730"
     let authToken = "06347b68f614f8f0540db1a9e1793b0c"
     let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
-    let parameters = ["From": "+12673607440", "To": number3, "Body": "Mayday: \(name3), your friend \(username) is in danger! click the link to see where they are:"]
+    let parameters = ["From": "+12673607440", "To": number3, "Body": "Mayday: \(name3), your friend \(username) is in danger! click the link to see where they are: https://www.google.com/maps/dir/40.010089,-75.2789172/301+E+Montgomery+Ave,+Ardmore,+PA+19003/@40.0106444,-75.282188,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x89c6c09c631f0b51:0x6a39636a31f22e56!2m2!1d-75.2803529!2d40.0098854!3e2"]
     print("sms processsssssssssssssssss")
     print(number1)
     Alamofire.request(url, method: .post, parameters: parameters)
