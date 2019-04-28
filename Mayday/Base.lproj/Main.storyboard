@@ -17,6 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ex-Vc-OdW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </scrollView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0dg-KU-2yj">
                                 <rect key="frame" x="37.666666666666657" y="491" width="300" height="30"/>
                                 <color key="backgroundColor" red="0.011764705882352941" green="0.043137254901960784" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -122,12 +125,14 @@
                         <color key="backgroundColor" red="0.011764705882352941" green="0.043137254901960784" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ckK-bp-azR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="34" id="5EL-2T-AEg"/>
+                            <constraint firstItem="8ex-Vc-OdW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HJg-EB-dk0"/>
                             <constraint firstItem="peG-7c-TWM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="52" id="IRh-yi-h8N"/>
                             <constraint firstItem="0dg-KU-2yj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="447" id="LQ6-hP-iCW"/>
                             <constraint firstItem="Ert-SF-2gN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LYc-tc-rBu"/>
                             <constraint firstItem="Ert-SF-2gN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="568" id="NA9-YO-Osf"/>
                             <constraint firstItem="zQP-yE-87d" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="476" id="TsU-Ft-Blf"/>
                             <constraint firstItem="MBv-N1-CBg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vkq-aS-hSK"/>
+                            <constraint firstItem="8ex-Vc-OdW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Yda-tv-sgi"/>
                             <constraint firstItem="peG-7c-TWM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aKB-hY-BS0"/>
                             <constraint firstItem="UNj-bY-23C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-78.5" id="fmz-M3-LHc"/>
                             <constraint firstItem="uOL-Rv-2qk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fyc-SL-zYO"/>
@@ -136,10 +141,14 @@
                             <constraint firstItem="zQP-yE-87d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k9F-Oc-KZR"/>
                             <constraint firstItem="uOL-Rv-2qk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="539" id="la2-nu-yfh"/>
                             <constraint firstItem="vWw-Cx-fhO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-102" id="nxx-Hd-bxw"/>
+                            <constraint firstItem="8ex-Vc-OdW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pYh-6A-QoP"/>
+                            <constraint firstAttribute="bottom" secondItem="8ex-Vc-OdW" secondAttribute="bottom" id="phO-PB-7ZK"/>
                             <constraint firstItem="5Hz-AD-eus" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="580" id="q88-Qh-mlV"/>
                             <constraint firstItem="ckK-bp-azR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="580" id="tzn-yl-rRM"/>
+                            <constraint firstItem="8ex-Vc-OdW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="v3A-8F-0fR"/>
                             <constraint firstItem="uOL-Rv-2qk" firstAttribute="top" secondItem="UNj-bY-23C" secondAttribute="bottom" constant="8" id="vFb-ww-UWA"/>
                             <constraint firstItem="MBv-N1-CBg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="709.33000000000004" id="vIg-CD-7n3"/>
+                            <constraint firstItem="8ex-Vc-OdW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wje-HD-cW8"/>
                             <constraint firstItem="0dg-KU-2yj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zHg-XK-BOJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -149,6 +158,7 @@
                         <outlet property="incorrectInput" destination="MBv-N1-CBg" id="PcR-uG-WUg"/>
                         <outlet property="passwordTextField" destination="uOL-Rv-2qk" id="0w6-07-F5w"/>
                         <outlet property="signInButton" destination="5Hz-AD-eus" id="h9O-Xk-gIj"/>
+                        <outlet property="signInScrollView" destination="8ex-Vc-OdW" id="VmQ-df-jb0"/>
                         <segue destination="wv1-7N-CF6" kind="show" identifier="loginToSegue" id="CAs-YM-Guc"/>
                     </connections>
                 </viewController>
@@ -417,6 +427,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZv-Yi-TxK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" red="0.01176470588" green="0.043137254899999998" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.01176470588" green="0.043137254899999998" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </scrollView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MAYDAY NEW" translatesAutoresizingMaskIntoConstraints="NO" id="f1k-dP-jiG">
                                 <rect key="frame" x="112.66666666666669" y="94" width="150" height="150"/>
                                 <constraints>
@@ -591,7 +606,7 @@
                                     <constraint firstAttribute="height" constant="30" id="U9j-7F-1ji"/>
                                     <constraint firstAttribute="width" constant="275" id="f3k-Bb-jvK"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -692,6 +707,7 @@
                             <constraint firstItem="rPt-rM-Dck" firstAttribute="centerX" secondItem="flS-8Z-GUm" secondAttribute="centerX" constant="99.5" id="0ak-t7-tYO"/>
                             <constraint firstItem="4vM-xu-vjX" firstAttribute="centerX" secondItem="flS-8Z-GUm" secondAttribute="centerX" constant="99.5" id="1Gx-mw-B7a"/>
                             <constraint firstItem="f1k-dP-jiG" firstAttribute="top" secondItem="flS-8Z-GUm" secondAttribute="topMargin" constant="50" id="1JE-sT-bOy"/>
+                            <constraint firstItem="vZv-Yi-TxK" firstAttribute="centerX" secondItem="flS-8Z-GUm" secondAttribute="centerX" id="3uu-Ns-x64"/>
                             <constraint firstItem="llj-1N-udP" firstAttribute="centerX" secondItem="flS-8Z-GUm" secondAttribute="centerX" constant="-80" id="5xy-Ip-Gti"/>
                             <constraint firstItem="u5q-fR-T6E" firstAttribute="centerX" secondItem="flS-8Z-GUm" secondAttribute="centerX" constant="-80" id="60E-N0-xCx"/>
                             <constraint firstItem="zy6-cQ-pvW" firstAttribute="top" secondItem="flS-8Z-GUm" secondAttribute="topMargin" constant="455" id="64C-aj-zAi"/>
@@ -706,8 +722,11 @@
                             <constraint firstItem="y1Z-yG-VIc" firstAttribute="top" secondItem="flS-8Z-GUm" secondAttribute="topMargin" constant="455" id="HUl-eX-cDy"/>
                             <constraint firstItem="y1Z-yG-VIc" firstAttribute="centerX" secondItem="flS-8Z-GUm" secondAttribute="centerX" constant="-80" id="Hjr-3l-Xib"/>
                             <constraint firstItem="llj-1N-udP" firstAttribute="top" secondItem="flS-8Z-GUm" secondAttribute="topMargin" constant="427" id="I0y-XX-xyW"/>
+                            <constraint firstItem="vZv-Yi-TxK" firstAttribute="leading" secondItem="PEJ-zl-U7m" secondAttribute="leading" id="J5o-cG-J5H"/>
                             <constraint firstItem="rPt-rM-Dck" firstAttribute="top" secondItem="flS-8Z-GUm" secondAttribute="topMargin" constant="405" id="LAW-Ey-GBl"/>
                             <constraint firstItem="ivd-iy-5N1" firstAttribute="centerX" secondItem="flS-8Z-GUm" secondAttribute="centerX" constant="-80" id="ORJ-MO-pDX"/>
+                            <constraint firstItem="vZv-Yi-TxK" firstAttribute="top" secondItem="flS-8Z-GUm" secondAttribute="top" id="Q1C-qv-PAB"/>
+                            <constraint firstItem="vZv-Yi-TxK" firstAttribute="centerY" secondItem="flS-8Z-GUm" secondAttribute="centerY" id="Qxm-2L-3RM"/>
                             <constraint firstItem="zy6-cQ-pvW" firstAttribute="centerX" secondItem="flS-8Z-GUm" secondAttribute="centerX" constant="99.5" id="Rvf-Nx-Mm3"/>
                             <constraint firstItem="g7M-cs-w0l" firstAttribute="top" secondItem="flS-8Z-GUm" secondAttribute="topMargin" constant="355" id="VGZ-OJ-ebt"/>
                             <constraint firstItem="J08-cK-xet" firstAttribute="top" secondItem="flS-8Z-GUm" secondAttribute="topMargin" constant="376.67000000000002" id="Wli-wE-7nu"/>
@@ -747,6 +766,7 @@
                         <viewLayoutGuide key="safeArea" id="PEJ-zl-U7m"/>
                     </view>
                     <connections>
+                        <outlet property="SettingScrollView" destination="vZv-Yi-TxK" id="lWf-tu-0Jd"/>
                         <outlet property="alarmTextField" destination="OfA-jY-DVc" id="dbD-p5-xSJ"/>
                         <outlet property="imageView" destination="f1k-dP-jiG" id="Kfw-6S-J2g"/>
                         <outlet property="name" destination="142-UB-MGs" id="nKE-we-uLL"/>
@@ -763,7 +783,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhj-FY-yh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1888.8" y="714.53201970443354"/>
+            <point key="canvasLocation" x="2004" y="-22.167487684729064"/>
         </scene>
     </scenes>
     <resources>
@@ -773,6 +793,6 @@
         <image name="line" width="626" height="2"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Zu5-X9-Mfj"/>
+        <segue reference="CAs-YM-Guc"/>
     </inferredMetricsTieBreakers>
 </document>

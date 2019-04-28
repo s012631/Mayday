@@ -14,6 +14,7 @@ import FirebaseDatabase
 class SettingsViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var SettingScrollView: UIScrollView!
     
     var imagePicker : UIImagePickerController?
     
