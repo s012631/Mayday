@@ -17,6 +17,7 @@ class MayDayHome: UIViewController {
     @IBOutlet weak var countDownLabel: UILabel!
     @IBOutlet weak var settingsButtonOutlet: UIButton!
  
+    @IBOutlet weak var safteyReleaseLine: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var safetyReleaseTextField: UITextField!
     
@@ -50,6 +51,7 @@ class MayDayHome: UIViewController {
      
         maydayButtonLabel.isHidden=false
         countDownLabel.isHidden=true
+        safteyReleaseLine.isHidden=true
         cancelButtonLabel.isHidden=true
         safetyReleaseTextField.isHidden=true
         setUpImageView()
@@ -106,6 +108,8 @@ class MayDayHome: UIViewController {
         //swap visible labels
         maydayButtonLabel.isHidden=true
         countDownLabel.isHidden=false
+        safteyReleaseLine.isHidden=true
+        safetyReleaseTextField.isHidden=true
         cancelButtonLabel.isHidden=false
         //Begin Timer
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
@@ -126,6 +130,8 @@ class MayDayHome: UIViewController {
             cancelButtonLabel.isHidden=true
             settingsButtonOutlet.isHidden=true
             safetyReleaseTextField.isHidden=false
+            safteyReleaseLine.isHidden=false
+
             safetyReleaseTextField.keyboardType = UIKeyboardType.numberPad
             endTimer()
             sendSMS1()
@@ -155,6 +161,7 @@ class MayDayHome: UIViewController {
         countDownLabel.isHidden=true
         cancelButtonLabel.isHidden=true
         safetyReleaseTextField.isHidden=true
+        safteyReleaseLine.isHidden=true
         settingsButtonOutlet.isHidden=false
         isPressed = false
         setUpImageView()
