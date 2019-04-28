@@ -17,16 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="JHB-UD-psm">
-                                <rect key="frame" x="-660" y="-19" width="1584" height="704"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MAYDAY NEW" translatesAutoresizingMaskIntoConstraints="NO" id="d3t-c8-yXH">
+                                <rect key="frame" x="12.5" y="183" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="3PR-tz-fuL"/>
+                                    <constraint firstAttribute="width" constant="350" id="zOg-2u-uQE"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnE-49-owa">
+                                <rect key="frame" x="48" y="541" width="279" height="106"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="72"/>
+                                <state key="normal" title="Mayday">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.011764705882352941" green="0.043137254901960784" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="JHB-UD-psm" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-660" id="3TM-ai-idz"/>
-                            <constraint firstItem="JHB-UD-psm" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-19" id="7lg-18-xTt"/>
-                            <constraint firstAttribute="bottom" secondItem="JHB-UD-psm" secondAttribute="bottom" constant="-18" id="Qdj-k3-fDo"/>
-                            <constraint firstAttribute="trailing" secondItem="JHB-UD-psm" secondAttribute="trailing" constant="-549" id="vaA-GO-yjB"/>
+                            <constraint firstItem="OnE-49-owa" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="521" id="9Cc-lf-Inq"/>
+                            <constraint firstItem="d3t-c8-yXH" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="AbN-aM-1zs"/>
+                            <constraint firstItem="OnE-49-owa" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="K8S-6G-5r4"/>
+                            <constraint firstItem="d3t-c8-yXH" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="183" id="axU-gq-4yb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -37,6 +48,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splash" width="512" height="384"/>
+        <image name="MAYDAY NEW" width="1024" height="1024"/>
     </resources>
 </document>
